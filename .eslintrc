@@ -1,0 +1,34 @@
+{
+  "parser": "@babel/eslint-parser", // 바벨이 문법을 해석해서, 최근 문법에 에러가 발생하지 않도록 함.
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "next/babel" // 훨씬 더 강력한 규제를 부여함 (recommended 너무 느슨했잖늬)
+  ],
+  "plugins": [
+    "import",
+    "react-hooks",
+      "jsx-a11y"
+    ],
+    "rules": {
+      "jsx-a11y/label-has-associated-control": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "no-console": "off",
+      "no-underscore-dangle": "off",
+      "react/forbid-prop-types": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "object-curly-newline": "off",
+      "linebreak-style": "off",
+      "no-param-reassign" : "off"
+    }
+  } 

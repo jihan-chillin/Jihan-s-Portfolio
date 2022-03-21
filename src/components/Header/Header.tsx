@@ -13,10 +13,10 @@ export function Header (){
         <HeaderWrapper>
            <LogoImage src="/logo.png"/>
                 <MenuWrapper>
-                    <MenuItem><a href="#me">About Me</a></MenuItem>
-                    <MenuItem><a href="#skill">Skills</a></MenuItem>
-                    <MenuItem><a href="#project">Projects</a></MenuItem>
-                    <MenuItem><a href="#timeline">Timeline</a></MenuItem>
+                    <MenuItem to="about" spy={true} smooth={true}>About Me</MenuItem>
+                    <MenuItem to="skill" spy={true} smooth={true}>Skills</MenuItem>
+                    <MenuItem to="project" spy={true} smooth={true}>Projects</MenuItem>
+                    <MenuItem to="timeline" spy={true} smooth={true}>Timeline</MenuItem>
                     <More src="/more.png"/>
                </MenuWrapper> 
         </HeaderWrapper>

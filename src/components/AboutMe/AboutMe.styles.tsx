@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-    
 `
 
 export const CateName = styled.span`
@@ -13,19 +12,23 @@ export const CateName = styled.span`
 export const Moto = styled.span`
     display: block;
     margin-top: 16px;
-    font-size: 28px;
+    font-size: 40px;
     color : #4b4b4b;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `
 
 export const AboutContentWrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    max-width: 560px;
+    max-width: 800px;
     margin: 0 auto;
-    background-color: blue;
+    border : 1px solid black;
 
-    @media screen and (max-width: 600px) {
-        width : 200px;
+    @media screen and (max-width: 800px) {
+        width : 240px;
     }
 `
 

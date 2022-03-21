@@ -2,12 +2,12 @@ import React from "react";
 import Head from 'next/head';
 
 import { Header } from "../components/Header/Header";
-import { MainContainer } from "../styles/main.style";
+import { MainContainer} from "../styles/main.style";
 import { AboutMe } from "../components/AboutMe/AboutMe";
 import { Skills } from "../components/Skills/Skills";
 import { Projects } from "../components/Projects/Projects";
 import { Timeline } from "../components/Timeline/Timeline";
-import { Sidebar } from "../components/Sidebar/Sidebar";
+import { TopBtn } from "../components/Common/views/TopBtn";
 
 function MainPage(){
     return (
@@ -19,7 +19,7 @@ function MainPage(){
                 <link rel="icon" href="/favicon.ico" /> 
             </Head>
             <Header/>
-           
+            <TopBtn/>
             <MainContainer>
                 <AboutMe/>
                 <Skills/>

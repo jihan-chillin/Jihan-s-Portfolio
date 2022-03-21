@@ -7,7 +7,7 @@ class MyDocument extends Document{
 
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
-
+    try{
       // 리액트 렌더링을 동기적으로 실행
     ctx.renderPage = () =>
       originalRenderPage({
@@ -20,19 +20,22 @@ class MyDocument extends Document{
     
     return {
       ...initialProps,
-      styles: [
-        ...React.Children.toArray(initialProps.styles),
-        sheet.getStyleElement(),
-      ],
+      styles: (
+        <>
+          {' '}
+          {initialProps.styles} {sheet.getStyleElement()}{' '}
+        </>
+      ),
     };
+    }finally{
+      sheet.seal();
+    }
   }
 
   render(){
     return(
       <Html lang="ko">
-        <Head>
-          {/* <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"/> */}
-        </Head>
+        <Head/>
         <body>
           <Main />
           <NextScript />

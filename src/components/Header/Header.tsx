@@ -11,7 +11,7 @@ import {
 export function Header (){
     return(
         <HeaderWrapper>
-           <LogoImage src="/logo.png"/>
+           <a href="/"><LogoImage src="/logo.png"/></a>
                 <MenuWrapper>
                     <MenuItem to="about" spy={true} smooth={true}>About Me</MenuItem>
                     <MenuItem to="skill" spy={true} smooth={true}>Skills</MenuItem>

@@ -7,6 +7,7 @@ import { AboutMe } from "../components/AboutMe/AboutMe";
 import { Skills } from "../components/Skills/Skills";
 import { Projects } from "../components/Projects/Projects";
 import { Timeline } from "../components/Timeline/Timeline";
+import { Sidebar } from "../components/Sidebar/Sidebar";
 
 function MainPage(){
     return (

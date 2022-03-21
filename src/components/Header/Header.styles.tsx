@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     padding : 0 40px;
     height: 88px;
-    border : solid 1px red;
+    border : solid 1px black;
 `
 
 export const LogoImage = styled.img`
@@ -37,6 +37,6 @@ export const MenuItem = styled(Link)`
 
 export const More = styled.img`
     vertical-align: middle;
-    width: 24px;
+    width: 28px;
     cursor: pointer;
 `

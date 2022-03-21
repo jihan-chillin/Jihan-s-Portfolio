@@ -4,9 +4,15 @@ export const AboutWrapper = styled.div`
 `
 
 export const CateName = styled.span`
+    display: inline-block;
+    margin-top: 76px;
     font-size: 20px;
     color: #4b4b4b;
     opacity: 0.5;
+
+    @media screen and (max-width : 800px){
+        margin-top: 24px;
+    }
 `
 
 export const Moto = styled.span`

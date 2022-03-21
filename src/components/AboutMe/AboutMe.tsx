@@ -17,7 +17,7 @@ export function AboutMe () {
             
             {/* <AboutContentWrapper id ="about"> */}
             <AboutContentWrapper>
-                <Profile src='/Proflie_light.png'/>
+                <Profile src='/proflie_light.png'/>
                 <AboutContent>
                     <Name>김지한 (jihan kim)</Name>
                 </AboutContent>

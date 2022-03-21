@@ -6,6 +6,7 @@ import {
     SidebarNav,
     CloseButtonWrapper,
     CloseButton,
+    InfoText,
     SidebarContentWrapper,
     SidebarMenuWrapper,
     SidebarMenuItem,
@@ -29,9 +30,10 @@ export function Sidebar() {
                     <CloseButton src="./closebtn.png" onClick={ToggleSidebar}/>
                 </CloseButtonWrapper>
                 <SidebarContentWrapper>
-                        로그인 하여<br/>
-                        <span style={{fontWeight : 'bold'}}>사계절 모드</span>를<br/>
-                        경험해보세요!
+                        <InfoText>로그인 하여</InfoText>
+                        <InfoText><span style={{fontWeight : 'bold'}}>사계절 모드</span>를</InfoText>
+                        <InfoText>경험해보세요!</InfoText>
+
                         <RoundButton RoundButtonTitle={'로그인'}/>
                 </SidebarContentWrapper>
 

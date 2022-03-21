@@ -17,7 +17,7 @@ export const CateName = styled.span`
 
 export const Moto = styled.span`
     display: block;
-    margin-top: 16px;
+    margin: 16px 0 100px 0;
     font-size: 40px;
     color : #4b4b4b;
 
@@ -28,27 +28,47 @@ export const Moto = styled.span`
 
 export const AboutContentWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
     max-width: 800px;
     margin: 0 auto;
-    border : 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    /* border : 1px solid black; */
 
     @media screen and (max-width: 800px) {
-        width : 240px;
+        display: block;
+        margin: 16px auto;
     }
 `
 
 export const Profile = styled.img`
     vertical-align: middle;
-    width: 280px;
+    width: 320px;
 `
 
 export const AboutContent = styled.div`
-    max-width: 400px;
-    background-color: red;
+    padding : 30px 0;
+    max-width: 360px;
+
+    @media screen and (max-width: 800px) {
+        margin: 0 auto;
+    }
 `
 
 export const Name = styled.span`
-    font-size: 20px;
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
     color: #4b4b4b;
+`
+
+export const AboutIconInfoWrapper = styled.div`
+
+`
+
+export const AboutIcon = styled.img`
+
+`
+
+export const AboutInfo = styled.span`
+
 `

@@ -29,6 +29,11 @@ export const CloseButton = styled.img`
     cursor: pointer;
 `
 
+export const InfoText = styled.span`
+    display: block;
+    margin-top: 3px;
+`
+
 export const SidebarContentWrapper = styled.div`
     text-align: center;
     padding : 18px 0;

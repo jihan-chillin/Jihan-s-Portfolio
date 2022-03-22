@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.div`
 `
 
 export const LogoImage = styled.img`
-    width: 54px;
+    width: 60px;
 `
 export const MenuWrapper = styled.div`
     position: relative;
@@ -32,10 +32,4 @@ export const MenuItem = styled(Link)`
     @media screen and (max-width: 800px) {
         display: none;
     }
-`
-
-export const More = styled.img`
-    vertical-align: middle;
-    width: 28px;
-    cursor: pointer;
 `

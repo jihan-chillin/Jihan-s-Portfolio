@@ -4,7 +4,7 @@ import {
     ImageTextWrapper,
     InfoImage,
     InfoText
-} from '../styles/ImageTextInput.styles'
+} from '../styles/ImageTextInfo.styles'
 
 export interface IImageTextInput{
     page? : string;

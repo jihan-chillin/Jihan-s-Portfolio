@@ -3,7 +3,7 @@ import {Link} from 'react-scroll';
 
 export const More = styled.img`
     vertical-align: middle;
-    width: 24px;
+    width: 28px;
     cursor: pointer;
 `
 

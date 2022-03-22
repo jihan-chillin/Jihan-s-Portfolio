@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsWrapper = styled.div`
-    height: 720px;
-    border : 1px solid black;
+    background-color: #E7E7E7;
 `
 
 export const CateName = styled.span`
@@ -11,4 +10,8 @@ export const CateName = styled.span`
     font-size: 20px;
     color: #4b4b4b;
     opacity: 0.5;
+
+    @media screen and (max-width : 800px){
+        margin-top: 24px;
+    }
 `

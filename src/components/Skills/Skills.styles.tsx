@@ -18,10 +18,10 @@ export const CateName = styled.span`
 `
 
 export const AllSkillsContenWrapper = styled.div`
-    width: 1400px;
+    width: 1100px;
     margin: 80px auto;
 
-    @media screen and (max-width:1400px) {
+    @media screen and (max-width:1100px) {
     margin: 24px auto;
     width: 600px;
 }

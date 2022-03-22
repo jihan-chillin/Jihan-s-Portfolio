@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
     background-color: #E7E7E7;
- 
 `
 
 export const CateName = styled.span`
@@ -23,7 +22,7 @@ export const Moto = styled.span`
     font-size: 40px;
     font-weight: bold;
     color : #4b4b4b;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.);
 
     @media screen and (max-width: 800px) {
         display: none;
@@ -41,8 +40,7 @@ export const AboutContentWrapper = styled.div`
 
     @media screen and (max-width: 800px) {
         display: block;
-        margin: 16px auto;
-        padding : 0 !important;
+        padding : 16px 0 !important;
     }
 `
 

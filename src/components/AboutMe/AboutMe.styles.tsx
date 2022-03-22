@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
+    background-color: #E7E7E7;
+ 
 `
 
 export const CateName = styled.span`
@@ -19,7 +21,9 @@ export const Moto = styled.span`
     display: block;
     margin: 16px 0 100px 0;
     font-size: 40px;
+    font-weight: bold;
     color : #4b4b4b;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 
     @media screen and (max-width: 800px) {
         display: none;
@@ -30,6 +34,7 @@ export const AboutContentWrapper = styled.div`
     display: flex;
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 160px;
     align-items: center;
     justify-content: space-between;
     /* border : 1px solid black; */
@@ -37,6 +42,7 @@ export const AboutContentWrapper = styled.div`
     @media screen and (max-width: 800px) {
         display: block;
         margin: 16px auto;
+        padding : 0 !important;
     }
 `
 
@@ -51,6 +57,7 @@ export const AboutContent = styled.div`
 
     @media screen and (max-width: 800px) {
         margin: 0 auto;
+        align-items : center;
     }
 `
 
@@ -59,16 +66,9 @@ export const Name = styled.span`
     font-size: 32px;
     font-weight: bold;
     color: #4b4b4b;
-`
 
-export const AboutIconInfoWrapper = styled.div`
-
-`
-
-export const AboutIcon = styled.img`
-
-`
-
-export const AboutInfo = styled.span`
-
+    @media screen and (max-width: 800px) {
+        display: inline-block;
+        font-size : 24px
+    }
 `

@@ -20,9 +20,10 @@ export const SidebarNav = styled.div<{showSidebar : boolean}>`
 `
 export const CloseButtonWrapper = styled.div`
     position: relative;
+    margin-bottom: 20px;
 `
 export const CloseButton = styled.img`
-    display: inline-block;
+    display: block;
     position: absolute;
     right: 0;
     width: 16px;

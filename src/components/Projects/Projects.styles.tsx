@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const ProjectsWrapper = styled.div`
+    height: 720px;
+    border : 1px solid black;
 `
 
 export const CateName = styled.span`

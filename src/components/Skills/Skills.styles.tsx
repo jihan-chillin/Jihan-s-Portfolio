@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
 export const SkillsWrapper = styled.div`
+    padding-bottom: 160px;
+    background-color: #F9F9F9;
+
+    @media screen and (max-width:800px) {
+        padding-bottom: 50px !important;
+    }
 `
 
 export const CateName = styled.span`
@@ -9,4 +15,14 @@ export const CateName = styled.span`
     font-size: 20px;
     color: #4b4b4b;
     opacity: 0.5;
+`
+
+export const AllSkillsContenWrapper = styled.div`
+    width: 1400px;
+    margin: 80px auto;
+
+    @media screen and (max-width:1400px) {
+    margin: 24px auto;
+    width: 600px;
+}
 `

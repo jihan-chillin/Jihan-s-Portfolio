@@ -6,7 +6,7 @@ import {
 
 export function Projects() {
     return (
-        <ProjectsWrapper id="project" style={{height : '720px', border : '1px solid black'}}>
+        <ProjectsWrapper id="project">
             <CateName>Projects</CateName>
             <div>프로젝트입니다.</div>
         </ProjectsWrapper>

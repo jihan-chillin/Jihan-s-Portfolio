@@ -1,14 +1,25 @@
+import { Html } from 'next/document'
 import React from 'react'
 import { 
     SkillsWrapper,
-    CateName
+    CateName,
+    AllSkillsContenWrapper,
  } from './Skills.styles'
+import { SkillsContent } from './SkillsContent'
 
 export function Skills() {
     return (
-        <SkillsWrapper id="skill" style={{height : '720px', border : '1px solid black'}}>
+        <SkillsWrapper id="skill">
             <CateName>Skills</CateName>
-            <div>스킬부분입니다.</div>
+            <AllSkillsContenWrapper>
+                <SkillsContent ImagePath={'./html.png'}Title={'html,css,js'} SkillPecentage={40}/>
+                <SkillsContent ImagePath={'./Next.png'}Title={'Next.js'} SkillPecentage={40}/>
+                <SkillsContent ImagePath={'./react.png'}Title={'React'} SkillPecentage={40}/>
+                <SkillsContent ImagePath={'./graphql.png'}Title={'GraphQL'} SkillPecentage={40}/>
+                <SkillsContent ImagePath={'./typescript.png'}Title={'Typescript'} SkillPecentage={40}/>
+                <SkillsContent ImagePath={'./github.png'}Title={'github(상태관리)'} SkillPecentage={40}/>
+            </AllSkillsContenWrapper>
+            
         </SkillsWrapper>
     )
 }

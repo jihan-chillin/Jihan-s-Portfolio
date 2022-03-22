@@ -7,7 +7,6 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     padding : 0 40px;
     height: 88px;
-    border : solid 1px black;
 `
 
 export const LogoImage = styled.img`

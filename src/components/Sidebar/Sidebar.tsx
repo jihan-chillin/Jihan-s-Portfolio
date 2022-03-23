@@ -13,7 +13,7 @@ import {
     SidebarMenuTitle,
     SidebarModeItemWrapper,
     SidebarModeImg,
-    SidebarModeText
+    SidebarModeText,
 } from './Sidebar.styles'
 
 export function Sidebar() {
@@ -25,6 +25,7 @@ export function Sidebar() {
     return(
         <>
             <More src="/more.png" onClick={ToggleSidebar}/>
+                
             <SidebarNav showSidebar={showSidebar}>
                 <CloseButtonWrapper>
                     <CloseButton src="./closebtn.png" onClick={ToggleSidebar}/>

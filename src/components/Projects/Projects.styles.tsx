@@ -15,3 +15,8 @@ export const CateName = styled.span`
         margin-top: 24px;
     }
 `
+
+export const SliderWholeContainer = styled.div`
+    margin: 0 auto;
+    background-color: grey;
+`

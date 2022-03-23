@@ -20,7 +20,7 @@ function MainPage(){
             </Head>
             <Header/>
             <TopBtn/>
-            <MainContainer>
+            <MainContainer className="no-scroll">
                 <AboutMe/>
                 <Skills/>
                 <Projects/>

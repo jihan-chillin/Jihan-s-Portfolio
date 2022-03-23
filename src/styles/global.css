@@ -7,9 +7,19 @@ body{
 
 *{
     box-sizing: border-box;
+    -ms-overflow-style: none;
 }
 
 a {
     color : #4b4b4b;
     text-decoration: none;
+}
+
+.no-scroll {
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

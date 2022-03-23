@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-    SliderWholeContainer,
     ProjectInfo, 
     ProjectTitle,
     SliderContainer,
@@ -12,7 +11,6 @@ import {
 
 export function Slider(){
     return(
-        <SliderWholeContainer>
             <SliderContainer>
                 <SliderImgContainer>
                     <SliderImg src='./graphql.png'/>
@@ -30,6 +28,5 @@ export function Slider(){
                     <ProjectDetailButton src='./detail.png'/>
                 </SliderContent>
             </SliderContainer>   
-        </SliderWholeContainer> 
     )
 }

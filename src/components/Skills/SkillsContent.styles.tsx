@@ -19,7 +19,7 @@ export const SkillsIcon = styled.img`
     margin-right : 40px;
 
     @media screen and (max-width: 800px) {
-    width: 60px;
+    width: 50px;
 }
 `
 export const SkillInfoWrapper = styled.div`
@@ -37,7 +37,7 @@ export const SkillTitle = styled.span`
     font-weight: bold;
 
     @media screen and (max-width:800px) {
-        font-size: 14px;
+        font-size: 12px;
     }
 `
 
@@ -45,7 +45,7 @@ export const SkillPercentage = styled.span`
     font-size: 16px;
 
     @media screen and (max-width:800px) {
-        font-size: 14px;
+        font-size: 12px;
     }
 `
 
@@ -56,7 +56,7 @@ export const SkillbarWrapper = styled.div`
 
     @media screen and (max-width:800px) {
         height: 16px;
-        width: 220px;
+        width: 180px;
     }
 `
 

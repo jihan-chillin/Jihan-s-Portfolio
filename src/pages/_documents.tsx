@@ -18,6 +18,7 @@ class MyDocument extends Document{
 
     const initialProps = await Document.getInitialProps(ctx);
     
+    
     return {
       ...initialProps,
       styles: (
@@ -36,7 +37,7 @@ class MyDocument extends Document{
     return(
       <Html lang="ko">
         <Head/>
-        <body>
+        <body className='no-scroll'>
           <Main />
           <NextScript />
         </body>

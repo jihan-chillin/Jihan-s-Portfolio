@@ -4,6 +4,7 @@ export const TopButtonWrapper = styled.div`
     position: fixed;
     bottom : 3rem;
     right : 3rem;
+    z-index: 1;
     width: 48px;
     height: 48px;
     background-color: #4b4b4b;

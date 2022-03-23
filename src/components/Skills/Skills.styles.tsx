@@ -22,7 +22,12 @@ export const AllSkillsContenWrapper = styled.div`
     margin: 80px auto;
 
     @media screen and (max-width:1100px) {
-    margin: 24px auto;
-    width: 600px;
-}
+    margin:24px auto;
+    width: 800px;
+    }
+
+    @media screen and (max-width:800px) {
+        margin:24px auto;
+        width: 400px;
+    }
 `

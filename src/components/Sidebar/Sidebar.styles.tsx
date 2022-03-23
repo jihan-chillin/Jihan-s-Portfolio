@@ -14,7 +14,7 @@ export const SidebarNav = styled.div<{showSidebar : boolean}>`
     padding : 30px;
     width: 260px;
     height: 100vh;
-    z-index: 1;
+    z-index: 3;
     border : 1px solid #AAAAAA;
     background-color: white;
     overflow: scroll ;

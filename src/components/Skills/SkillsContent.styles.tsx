@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const SkillContenWrapper = styled.div`
     display: inline-flexbox;
@@ -75,8 +75,17 @@ export const SkillbarBackground = styled(SkillbarBaseBox)`
     opacity: 0.5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
+export const fillProgressbar = (percent:number) => keyframes`
+    0%{
+        width : 0%
+    }
+    100%{
+        width : ${percent}%;
+    }
+`
 
 export const Progress = styled(SkillbarBaseBox)`
-    width: ${({ percent }) => percent}%;
+    width: ${(props)=>props.percent}%;
     background-color: #F6C45A;
+    animation : ${props => fillProgressbar(props.percent)} 5s ease-out;
 `

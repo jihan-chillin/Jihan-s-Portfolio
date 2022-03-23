@@ -24,7 +24,7 @@ export function SkillsContent({
     SkillPecentage
 }:ISkillsContent){
 
-    const [percent, setPercent] = useState(40);
+const [percent, setPercent] = useState(60)
 
     return (
         <>

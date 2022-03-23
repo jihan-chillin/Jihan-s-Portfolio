@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import { ButtonWrapper } from '../styles/RoundBtn.styles';
 
 export interface IRoundButton{
@@ -9,6 +10,6 @@ export function RoundButton({
     RoundButtonTitle,
 }:IRoundButton){
     return(
-        <ButtonWrapper>{RoundButtonTitle}</ButtonWrapper>
+        <ButtonWrapper><Link href="/login">{RoundButtonTitle}</Link></ButtonWrapper>
     )
 }

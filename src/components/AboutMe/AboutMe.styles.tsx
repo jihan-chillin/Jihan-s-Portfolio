@@ -47,6 +47,10 @@ export const AboutContentWrapper = styled.div`
 export const Profile = styled.img`
     vertical-align: middle;
     width: 320px;
+
+    @media screen and (max-width: 800px) {
+        width: 200px ;
+    }
 `
 
 export const AboutContent = styled.div`

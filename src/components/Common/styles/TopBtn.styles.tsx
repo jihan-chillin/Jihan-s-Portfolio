@@ -14,7 +14,7 @@ export const TopButtonWrapper = styled.div`
     @media screen and (max-width: 800px) {
         font-size: 16px;
         bottom : 2rem;
-        right : 2rem;
+        right : 2.5rem;
     }
 `
 

@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 김지한 포트폴리오 💚
+###### 여기에 간단한 포트폴리오 설명
+![image](/public/mainImage.png)
+## 목차
+* [기술 스택](#기술-스택)
+* [프로젝트 기능](#프로젝트-기능)
+* [프로젝트 구조](#프로젝트-구조)
+* [미리보기](#미리보기)
+* [실행 방법](#실행-방법)
+* [업데이트 계획](#업데이트-계획)
 
-## Getting Started
+### 기술 스택 🛠️
+##### Front
+* Language & FrameWork
+  * Typescript
+  * React.js (Next.js)
+* Library
+  * styled component
+  
+##### Back
+#+## 프로젝트 기능 💻
+##### 0. 반응형 웹 
+##### 1. 사계절 모드
+* 봄, 여름, 가을, 겨울 별로 사이트의 테마색상이 변경된다.
+* 로그인을 했을 경우에만 변경 가능하다.
+##### 2. 다크모드
+* 달 모양 아이콘을 클릭했을 시, 다크모드로 변환된다.
+* 로그인 없이 이용가능하다.
+##### 3. 회원가입 및 로그인
+* 카카오 로그인 API를 이용해 회원가입과 로그인을 할 수 있다.
+##### 4. 스크롤 위치기억
+* header에 있는 메뉴들을 클릭했을 시, 해당 화면으로 스크롤이 이동된다.
+##### 5. top버튼 
+* top버튼 클릭시 제일 위 화면으로 스크롤이 이동한다.
+##### 6. 기타
+* 에러페이지
+* 모달창
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 프로젝트 구조 🏗️
+### 미리 보기 👁️‍🗨️
+### 실행 방법 📝
+### 추후 업데이트 계획 💡

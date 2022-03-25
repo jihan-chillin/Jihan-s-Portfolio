@@ -20,11 +20,18 @@ export const LOG_OUT_REQUEST = 'LOG_OUT_REQUEST';
 export const LOG_OUT_SUCCESS = 'LOG_OUT_SUCCESS';
 export const LOG_OUT_FAILURE = 'LOG_OUT_FAILURE';
 
-const dummyUser = () => ({
-    id : 1,
-    nickname : '김지한',
-});
+const dummyUser = (data) =>({
+    ...data,
+})
 
+export const loginRequestAction = (data) => ({
+    type: LOG_IN_REQUEST,
+    data,
+  });
+  
+  export const logoutRequestAction = () => ({
+    type: LOG_OUT_REQUEST,
+  });
 
 const reducer = (state = initialState, action) => produce(state, (draft) => {
     switch(action.type){
@@ -35,7 +42,7 @@ const reducer = (state = initialState, action) => produce(state, (draft) => {
             break;
         case LOG_IN_SUCCESS:
             draft.logInLoading = false;
-            draft.me = dummyUser;
+            draft.me = dummyUser(action.data);
             draft.logInDone = true;
             break;
         case LOG_IN_FAILURE:

@@ -1,28 +1,37 @@
 import React, { useCallback } from 'react';
-import Link from 'next/link'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import { ButtonWrapper } from '../styles/RoundBtn.styles';
 
-import { LOG_IN_REQUEST } from '../../../../reducers/userReducer';
+import { LOG_IN_REQUEST, LOG_OUT_REQUEST } from '../../../../reducers/userReducer';
 
-export interface IRoundButton{
-    RoundButtonTitle? : string;
-}
 
-export function RoundButton({
-    RoundButtonTitle,
-}:IRoundButton){
-    // const dispatch = useDispatch();
+export function RoundButton(){
+    const dispatch = useDispatch();
+    const dummyUser = {id : 1, nickname : "김지한"}
+    const Login = useCallback(()=>{
+        console.log("로그인 버튼클릭")
+        dispatch({
+            type : LOG_IN_REQUEST,
+            data : dummyUser,
+        })
+        console.log(dummyUser)
+    },[])
 
-    // const Login = useCallback(()=>{
-    //     dispatch({
-    //         type : LOG_IN_REQUEST,
-    //     })
-    // },[]);
+    const Logout = useCallback(()=>{
+        console.log("로그아웃 버튼클릭")
+        dispatch({
+            type : LOG_OUT_REQUEST,
+        })
+    },[])
 
-    return(
-        <ButtonWrapper><Link href="/login">{RoundButtonTitle}</Link></ButtonWrapper>
-        // <ButtonWrapper onClick={Login}>{RoundButtonTitle}</ButtonWrapper>
-        
-   )
+    const {me} = useSelector((state)=>state.user);
+    
+    return (
+        <>
+            {me 
+                ? <ButtonWrapper onClick={Logout}>로그아웃</ButtonWrapper>
+                : <ButtonWrapper onClick={Login}>로그인</ButtonWrapper>
+            }
+        </>
+    )
 }

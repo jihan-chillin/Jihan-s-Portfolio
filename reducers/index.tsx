@@ -1,22 +1,21 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { combineReducers } from 'redux';
 
-// import about from '../sagas/about';
+import user from './userReducer'
 
 const rootReducer = combineReducers({
-  index: (state = {}, action) => {
+  index: (state ={}, action) => {
     switch (action.type) {
       case HYDRATE:
-        console.log('HYDRATE', action);
         return {
-        //   ...state,
+          ...state,
           ...action.payload,
         };
       default:
         return state;
     }
   },
-  // about,
+  user,
 });
 
 export default rootReducer;

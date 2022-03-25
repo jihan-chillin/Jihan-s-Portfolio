@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import { 
     ProjectInfo, 
     ProjectTitle,
@@ -6,10 +6,17 @@ import {
     SliderContent,
     SliderImgContainer,
     ProjectDetailButton,
-    SliderImg
+    SliderImg,
  } from './Slider.styles';
 
-export function Slider(){
+ export interface ISlider{
+    slideRef? : any;
+}
+
+export function  Slider({
+    slideRef,
+}:ISlider){
+
     return(
             <SliderContainer>
                 <SliderImgContainer>

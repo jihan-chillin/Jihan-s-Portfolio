@@ -1,7 +1,7 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { combineReducers } from 'redux';
 
-import about from '../sagas/about';
+// import about from '../sagas/about';
 
 const rootReducer = combineReducers({
   index: (state = {}, action) => {
@@ -16,7 +16,7 @@ const rootReducer = combineReducers({
         return state;
     }
   },
-  about
+  // about,
 });
 
 export default rootReducer;

@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const SliderContainer = styled.div`
     display: inline-block;
-    width : 320px;
+    width : 300px;
     height : 450px;
-    margin : 60px 20px;
+    margin : 60px 30px 60px 60px;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width : 800px){
+        margin : 60px 30px;   
+    }
 `
+
 export const SliderImgContainer = styled.div`
     width: 100%;
     height : 240px;
@@ -19,7 +24,7 @@ export const SliderImg = styled.img`
     height: 100%;
 `
 export const SliderContent = styled.div`
-    width : 324px;
+    width : 300px;
     margin-top: 20px;
 `
 

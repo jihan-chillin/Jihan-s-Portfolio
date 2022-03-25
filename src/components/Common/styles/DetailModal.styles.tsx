@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ModalWrapper = styled.div`
     width : 440px;
     margin: 60px auto;
+    z-index : 4;
     background-color: #E7E7E7 ;
     border-radius: 20px;
 

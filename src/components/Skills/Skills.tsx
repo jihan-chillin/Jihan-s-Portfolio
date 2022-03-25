@@ -12,9 +12,9 @@ export function Skills() {
         <SkillsWrapper id="skill">
             <CateName>Skills</CateName>
             <AllSkillsContenWrapper>
-                <SkillsContent ImagePath={'./html.png'}Title={'html,css,js'} SkillPecentage={60}/>
+                <SkillsContent ImagePath={'./html.png'}Title={'html,css,js'} SkillPecentage={80}/>
                 <SkillsContent ImagePath={'./Next.png'}Title={'Next.js'} SkillPecentage={60}/>
-                <SkillsContent ImagePath={'./react.png'}Title={'React'} SkillPecentage={60}/>
+                <SkillsContent ImagePath={'./react.png'}Title={'React'} SkillPecentage={40}/>
                 <SkillsContent ImagePath={'./graphql.png'}Title={'GraphQL'} SkillPecentage={60}/>
                 <SkillsContent ImagePath={'./typescript.png'}Title={'Typescript'} SkillPecentage={60}/>
                 <SkillsContent ImagePath={'./github.png'}Title={'github(상태관리)'} SkillPecentage={60}/>

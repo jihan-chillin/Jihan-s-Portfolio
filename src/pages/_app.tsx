@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import { AppProps } from 'next/app';
+import wrapper from '../../store/configureStore';
 
 import '../styles/global.css';
 
@@ -13,4 +14,4 @@ app.getInitialProps = async (appContext : any) => {
   return { ...appProps }
 }
 
-export default app;
+export default wrapper.withRedux(app);

@@ -1,3 +1,6 @@
+import { AboutMe } from "../src/components/AboutMe/AboutMe"
+import reducer from "./userReducer"
+
 export const initialState = {
     id : 1,
     moto : '꾸준한 성장을 목표로 하는 FE개발자',
@@ -18,12 +21,4 @@ export const initialState = {
     }]
 }
 
-// const reducer = (state = initialState, action)=>{
-//     switch(action.type){
-//         case CREATE_ABOUT :
-//             return{
-//                 ...state,
-
-//             }
-//     }
-// }
+export default reducer;

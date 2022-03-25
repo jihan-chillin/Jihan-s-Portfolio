@@ -24,7 +24,7 @@ export function SkillsContent({
     SkillPecentage
 }:ISkillsContent){
 
-const [percent, setPercent] = useState(60)
+// const [percent, setPercent] = useState(60)
 
     return (
         <>
@@ -38,7 +38,7 @@ const [percent, setPercent] = useState(60)
                     </SkillTitleWrapper>
                     <SkillbarWrapper>
                         <SkillbarBackground/>
-                        <Progress percent={percent}/>
+                        <Progress percent={SkillPecentage}/>
                     </SkillbarWrapper>
                 </SkillInfoWrapper>
             </SkillContenWrapper>

@@ -1,4 +1,5 @@
 import React, {useCallback, useState} from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { RoundButton } from '../Common/views/RoundBtn';
 
 import { 
@@ -17,6 +18,9 @@ import {
 } from './Sidebar.styles'
 
 export function Sidebar() {
+    const dispatch = useDispatch();
+    // const {me} = useSelector((state) => state.user)
+
     const [showSidebar, setShowSidebar] = useState(false);
     const ToggleSidebar = useCallback(()=>{
         setShowSidebar((prev) => !prev);

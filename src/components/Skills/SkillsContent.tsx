@@ -28,7 +28,6 @@ export function SkillsContent({
 
     return (
         <>
-            {/* SkillContentWrapper 나중에 for문 or 맵돌려서 나오게 해야겠다. */}
             <SkillContenWrapper>
                 <SkillsIcon src={ImagePath}/>
                 <SkillInfoWrapper>

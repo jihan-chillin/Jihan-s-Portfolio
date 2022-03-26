@@ -10,11 +10,13 @@ import {
  } from './Slider.styles';
 
  export interface ISlider{
-    slideRef? : any;
+    title : string,
+    info : string,
 }
 
 export function  Slider({
-    slideRef,
+    title,
+    info 
 }:ISlider){
 
     return(
@@ -23,15 +25,8 @@ export function  Slider({
                     <SliderImg src='./graphql.png'/>
                 </SliderImgContainer>
                 <SliderContent>
-                    <ProjectTitle>프로젝트명</ProjectTitle>
-                    <ProjectInfo>
-                        프로젝트 컨텐츠프로젝트 컨텐츠프로젝트 
-                        컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠프로젝트 
-                        컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠
-                        컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠
-                        컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠
-                        컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠프로젝트 컨텐츠
-                    </ProjectInfo>
+                    <ProjectTitle>{title}</ProjectTitle>
+                    <ProjectInfo>{info}</ProjectInfo>
                     <ProjectDetailButton src='./detail.png'/>
                 </SliderContent>
             </SliderContainer>   

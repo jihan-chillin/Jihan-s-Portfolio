@@ -19,7 +19,7 @@ export const TimelineWholeContentWrapper = styled.div`
 
 export const TimelineContentWrapper = styled.div`
     display: flex;
-    margin: 28px auto;
+    margin: 40px auto;
     padding: 0 20px;
     max-width: 800px;
     justify-content: space-between;

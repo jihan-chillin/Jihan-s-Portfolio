@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import theme from '../../styles/theme.styles'
 
 export const AboutWrapper = styled.div`
-    background-color: #E7E7E7;
+    background-color: ${(props)=>props.theme.theme_5};
 `
 
 export const CateName = styled.span`

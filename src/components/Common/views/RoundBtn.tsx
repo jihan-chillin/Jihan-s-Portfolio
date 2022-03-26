@@ -24,7 +24,7 @@ export function RoundButton(){
         })
     },[])
 
-    const {me} = useSelector((state)=>state.user);
+    const {me} = useSelector((state:any)=>state.user);
     
     return (
         <>

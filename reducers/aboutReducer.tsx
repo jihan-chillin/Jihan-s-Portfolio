@@ -1,10 +1,9 @@
-import { AboutMe } from "../src/components/AboutMe/AboutMe"
-import reducer from "./userReducer"
+import produce from "immer";
 
 export const initialState = {
     id : 1,
     moto : '꾸준한 성장을 목표로 하는 FE개발자',
-    profile : "./profile.png",
+    profile : "./proflie_light.png",
     profilePath : [], // 프로필 업로드 시 저장되는 경로
     InfoAboutMe : [{
         icon : "./mail.png",
@@ -15,10 +14,17 @@ export const initialState = {
         infoText : "https://github.com/jihan-chillin",
         goLink : "https://github.com/jihan-chillin"
     },{
-        icon : ".blog/.png",
+        icon : "./blog.png",
         infoText : "CODE N CHILL (BLOG)",
         goLink : "https://blog.naver.com/kimjihan77"
     }]
 }
+
+const reducer = (state = initialState, action) => produce(state, (draft) => {
+    switch(action.type){
+        default:
+            break;
+        }
+});
 
 export default reducer;

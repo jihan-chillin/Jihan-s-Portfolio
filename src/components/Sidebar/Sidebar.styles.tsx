@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, {ThemeProvider} from "styled-components";
 import {Link} from 'react-scroll';
+import theme from '../../styles/theme.styles'
 
 export const More = styled.img`
     vertical-align: middle;
@@ -84,7 +85,7 @@ export const SidebarModeImg = styled.img`
     cursor: pointer;
 
     &:hover{
-        // 색상 변하게 하는 거 
+        filter: contrast(200%); 
     }
 `
 
@@ -95,7 +96,7 @@ export const SidebarModeText = styled.span`
     cursor: pointer;
 
     &:hover{
-        color : #000000;
+        color: ${(props)=>props.color};
         font-weight: bold;
     }
 `

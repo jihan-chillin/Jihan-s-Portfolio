@@ -1,7 +1,12 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { combineReducers } from 'redux';
 
+import theme from './themeReducer'
 import user from './userReducer'
+import about from './aboutReducer'
+import skill from './skillsReducer'
+import project from './projectsReducer'
+import timeline from './timelineReducer'
 
 const rootReducer = combineReducers({
   index: (state ={}, action) => {
@@ -15,7 +20,12 @@ const rootReducer = combineReducers({
         return state;
     }
   },
+  theme,
   user,
+  about,
+  skill,
+  project,
+  timeline,
 });
 
 export default rootReducer;

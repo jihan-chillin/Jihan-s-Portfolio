@@ -10,8 +10,11 @@ import {
 
 import { DetailModal } from '../Common/views/DetailModal'
 import { Slider } from '../Slider/Slider'
+import { useSelector } from 'react-redux'
 
 export function Projects() {
+    const {ProjectContent} = useSelector((state)=> state.project);
+
     const [currentSlide, setCurrentSlide] = useState(0);
     const slideRef = useRef(null);
 
@@ -50,8 +53,10 @@ export function Projects() {
             <ProjectsWrapper id="project">
                 <CateName>Projects</CateName>
                 <SliderWholeContainer ref={slideRef}>
-                    <Slider/>
-                    <Slider/>
+                    {ProjectContent.map((value)=>(
+                        <Slider title={value.ProjectTitle} info={value.ProjectInfo}/>
+                    ))}
+                
                     {/* <Slider/> */}
                 </SliderWholeContainer>
                 <ForwardArrow onClick={moveLeft} src='/forwardArrow.png'/>

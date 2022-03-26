@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import App from 'next/app';
 import { AppProps } from 'next/app';
+import { ThemeProvider } from 'styled-components';
+// import theme from '../../reducers'
+import theme from '../styles/theme.styles';
 import wrapper from '../../store/configureStore';
-
 import '../styles/global.css';
 
+
 function app({ Component, pageProps } : AppProps) {
-    return <Component {...pageProps} />
+    return (
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    )
   }
    
 app.getInitialProps = async (appContext : any) => {

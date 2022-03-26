@@ -24,15 +24,6 @@ const dummyUser = (data) =>({
     ...data,
 })
 
-export const loginRequestAction = (data) => ({
-    type: LOG_IN_REQUEST,
-    data,
-  });
-  
-  export const logoutRequestAction = () => ({
-    type: LOG_OUT_REQUEST,
-  });
-
 const reducer = (state = initialState, action) => produce(state, (draft) => {
     switch(action.type){
         case LOG_IN_REQUEST:

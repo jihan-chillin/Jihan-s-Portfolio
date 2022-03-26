@@ -10,7 +10,7 @@ import { SkillsContent } from './SkillsContent'
 
 export function Skills() {
 
-    const {SkillsInfos} = useSelector((state)=>state.skill);
+    const {SkillsInfos} = useSelector((state:any)=>state.skill);
 
     return (
         <SkillsWrapper id="skill">

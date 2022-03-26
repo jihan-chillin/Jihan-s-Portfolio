@@ -7,6 +7,7 @@ import about from './aboutReducer'
 import skill from './skillsReducer'
 import project from './projectsReducer'
 import timeline from './timelineReducer'
+import modal from './modalReducer'
 
 const rootReducer = combineReducers({
   index: (state ={}, action) => {
@@ -26,6 +27,7 @@ const rootReducer = combineReducers({
   skill,
   project,
   timeline,
+  modal
 });
 
 export default rootReducer;

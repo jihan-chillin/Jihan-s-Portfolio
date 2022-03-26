@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
 export const ModalWrapper = styled.div`
+    position: absolute;
+    top : 0%;
+    left : 25%;
+    display: inline-block;
     width : 440px;
     margin: 60px auto;
-    z-index : 4;
     background-color: #E7E7E7 ;
     border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (max-width: 800px) {
+        position: absolute;
+        top : 5%;
+        left : 8%;
         width: 300px;
         margin: 40px auto;
     }
@@ -20,18 +27,18 @@ export const ModalCloseButtonWrapper = styled.div`
 export const ModalCloseButton = styled.img`
     display: block;
     position: absolute;
-    top : 20px;
-    right: 20px;
+    top : 30px;
+    right: 30px;
     width: 16px;
     cursor: pointer;
 `
 
 export const ModalContentWrapper = styled.div`
-    padding : 60px;
+    padding : 72px 60px;
     text-align: left;
 
     @media screen and (max-width: 800px) {
-        padding : 40px; 
+        padding : 60px 40px; 
     }
 `
 

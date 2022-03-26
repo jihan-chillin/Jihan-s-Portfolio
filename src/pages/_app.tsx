@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import App from 'next/app';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
-// import theme from '../../reducers'
 import theme from '../styles/theme.styles';
 import wrapper from '../../store/configureStore';
 import '../styles/global.css';

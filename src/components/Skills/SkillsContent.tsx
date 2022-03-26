@@ -15,7 +15,7 @@ import {
 export interface ISkillsContent{
     ImagePath? : string;
     Title: string;
-    SkillPecentage : number;
+    SkillPecentage : string;
 }
 
 export function SkillsContent({

@@ -1,20 +1,19 @@
 import React, {useRef, useState, useEffect} from 'react'
+import { useSelector } from 'react-redux'
 import { 
+    ProjectBackground,
     ProjectsWrapper, 
     CateName,
     SliderWholeContainer,
     ForwardArrow,
     BackwardArrow
-     
 } from './Projects.styles'
 
-import { DetailModal } from '../Common/views/DetailModal'
 import { Slider } from '../Slider/Slider'
-import { useSelector } from 'react-redux'
 
 export function Projects() {
-    const {ProjectContent} = useSelector((state)=> state.project);
-
+    const {ProjectContent} = useSelector((state:any)=> state.project);
+    const {showProjectDetail} = useSelector((state:any)=>state.modal);
     const [currentSlide, setCurrentSlide] = useState(0);
     const slideRef = useRef(null);
 
@@ -47,17 +46,15 @@ export function Projects() {
         // slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
     }, [currentSlide]);
 
-
     return (
         <>
             <ProjectsWrapper id="project">
+                <ProjectBackground showProjectDetail={showProjectDetail}/>
                 <CateName>Projects</CateName>
                 <SliderWholeContainer ref={slideRef}>
                     {ProjectContent.map((value)=>(
-                        <Slider title={value.ProjectTitle} info={value.ProjectInfo}/>
+                        <Slider title={value.ProjectTitle} info={value.ProjectInfo} detailId={value.ProjectId}/>
                     ))}
-                
-                    {/* <Slider/> */}
                 </SliderWholeContainer>
                 <ForwardArrow onClick={moveLeft} src='/forwardArrow.png'/>
                 <BackwardArrow onClick={moveRight} src='/backwardArrow.png'/>

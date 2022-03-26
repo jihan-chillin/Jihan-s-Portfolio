@@ -19,6 +19,7 @@ export const TimelineWholeContentWrapper = styled.div`
 
 export const TimelineContentWrapper = styled.div`
     display: flex;
+    position: relative;
     margin: 40px auto;
     padding: 0 20px;
     max-width: 800px;
@@ -46,7 +47,8 @@ export const TimelineTitle = styled.div`
     font-size: 20px;
     border : 3px solid #F6C45A;
     border-radius: 20px;
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
+    background-color: red;
     cursor: pointer;
     
     &:hover{

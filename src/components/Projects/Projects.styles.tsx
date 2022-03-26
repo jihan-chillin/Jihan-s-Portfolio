@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+export const ProjectBackground = styled.div`
+    display: ${(props)=> props.showProjectDetail ? 'block' : 'none'};
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #4b4b4b;
+    opacity: 0.6;
+`
+
 export const ProjectsWrapper = styled.div`
     position: relative;
     margin: 0 auto;
@@ -19,12 +30,11 @@ export const CateName = styled.span`
 `
 
 export const SliderWholeContainer = styled.div`
-    display: flex;
+    position : relative;
     margin: 0 auto;
     width: 800px;
     align-items: center;
     overflow: hidden;
-    background-color: red;
 
     @media screen and (max-width : 800px){
         width: 360px;   

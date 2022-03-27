@@ -58,7 +58,15 @@ export const TimelineTitle = styled.div`
     width : 500px;
     height: 40px;
     font-size: 20px;
-    border : 3px solid #F6C45A;
+    border : 3px solid ${(props)=>props.colorKey == 0 
+        ? (props)=>props.theme.theme_6 
+        : (props)=>props.colorKey == 1 
+        ? (props)=>props.theme.theme_7
+        : (props)=>props.colorKey == 2 
+        ? (props)=>props.theme.theme_8
+        : (props)=>props.colorKey == 3 
+        ? (props)=>props.theme.theme_9
+        : (props)=>props.theme.theme_10};
     border-radius: 20px;
     background-color: ${(props)=>props.theme.theme_12};
     cursor: pointer;
@@ -68,6 +76,7 @@ export const TimelineTitle = styled.div`
         width: 520px;
         height : 44px;
         font-size: 22px;
+        font-weight: bold;
         border-radius: 30px;
     }
     

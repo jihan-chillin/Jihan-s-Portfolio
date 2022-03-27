@@ -16,6 +16,7 @@ export const initialState = {
       'theme_12' : '#FCFCFC',
       'theme_13' : '#4B4B4B',
       'theme_14' : '#AAAAAA',
+      'theme_15' : '#F6C45A',
     }
 }
 

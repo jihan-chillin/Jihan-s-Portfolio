@@ -39,7 +39,7 @@ export function Timeline() {
                     {TimelineContents.map((value, key)=>(
                         <TimelineContentWrapper>
                             <Period>{value.timelinePeriod}</Period>
-                            <TimelineTitle onClick={()=>showTimelineModal(key)}>{value.timelineTitle}</TimelineTitle>
+                            <TimelineTitle colorKey={key} onClick={()=>showTimelineModal(key)}>{value.timelineTitle}</TimelineTitle>
                         </TimelineContentWrapper>
                     ))}
                 </TimelineWholeContentWrapper>

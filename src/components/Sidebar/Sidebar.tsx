@@ -57,7 +57,7 @@ export function Sidebar() {
                 {me 
                     ? (
                         <SidebarContentWrapper>
-                        <InfoText><span style={{fontWeight : 'bold', color : color.theme_3}}>{me.nickname}</span>님</InfoText>
+                        <InfoText><span style={{fontWeight : 'bold', color : color.theme_3}}>{me.nickname}</span> 님</InfoText>
                         <InfoText>안녕하세요!</InfoText>
                         <RoundButton/>
                         </SidebarContentWrapper>

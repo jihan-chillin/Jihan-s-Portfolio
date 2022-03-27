@@ -12,7 +12,7 @@ export const initialState = {
         skillPercentage : 60,
     },{
         skillTitle : 'Redux',
-        skillImagePath : './Next.png',
+        skillImagePath : './redux.png',
         skillPercentage : 40,
     },{
         skillTitle : 'Typescript',

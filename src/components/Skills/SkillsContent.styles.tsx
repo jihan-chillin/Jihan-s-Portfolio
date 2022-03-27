@@ -17,6 +17,7 @@ export const SkillContenWrapper = styled.div`
 export const SkillsIcon = styled.img`
     width : 100px;
     margin-right : 40px;
+    filter : ${(props)=>props.gitKey ? 'invert(100%)' : 'invert(0%)'};
 
     @media screen and (max-width: 800px) {
     width: 50px;
@@ -88,6 +89,16 @@ export const fillProgressbar = (percent:number) => keyframes`
 
 export const Progress = styled(SkillbarBaseBox)`
     width: ${(props)=>props.percent}%;
-    background-color: #F6C45A;
+    background-color: ${(props)=>props.colorKey == 0 
+        ? (props)=>props.theme.theme_6 
+        : (props)=>props.colorKey == 1 
+        ? (props)=>props.theme.theme_7
+        : (props)=>props.colorKey == 2 
+        ? (props)=>props.theme.theme_8
+        : (props)=>props.colorKey == 3 
+        ? (props)=>props.theme.theme_9
+        : (props)=>props.colorKey == 4
+        ? (props)=>props.theme.theme_10
+        : (props)=>props.theme.theme_15};
     animation : ${props => fillProgressbar(props.percent)} 5s ease-out;
 `

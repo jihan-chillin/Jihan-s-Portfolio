@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useSelector } from 'react-redux';
 
 import {
     SkillInfoWrapper,
@@ -13,31 +14,31 @@ import {
 } from './SkillsContent.styles'
 
 export interface ISkillsContent{
-    ImagePath? : string;
-    Title: string;
-    SkillPecentage : string;
+    imagePath? : string;
+    title: string;
+    skillPecentage : string;
+    colorKey : number,
 }
 
 export function SkillsContent({
-    ImagePath,
-    Title,
-    SkillPecentage
+    imagePath,
+    title,
+    skillPecentage,
+    colorKey
 }:ISkillsContent){
 
-// const [percent, setPercent] = useState(60)
-
-    return (
+     return (
         <>
             <SkillContenWrapper>
-                <SkillsIcon src={ImagePath}/>
+                <SkillsIcon src={imagePath}/>
                 <SkillInfoWrapper>
                     <SkillTitleWrapper>
-                        <SkillTitle>{Title}</SkillTitle>
-                        <SkillPercentage>{SkillPecentage}%</SkillPercentage>
+                        <SkillTitle>{title}</SkillTitle>
+                        <SkillPercentage>{skillPecentage}%</SkillPercentage>
                     </SkillTitleWrapper>
                     <SkillbarWrapper>
                         <SkillbarBackground/>
-                        <Progress percent={SkillPecentage}/>
+                        <Progress colorKey={colorKey} percent={skillPecentage}/>
                     </SkillbarWrapper>
                 </SkillInfoWrapper>
             </SkillContenWrapper>

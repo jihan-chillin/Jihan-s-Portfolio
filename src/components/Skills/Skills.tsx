@@ -17,7 +17,12 @@ export function Skills() {
             <CateName>Skills</CateName>
             <AllSkillsContenWrapper>
                 {SkillsInfos.map((value, key)=>(
-                    <SkillsContent Title={value.skillTitle} ImagePath={value.skillImagePath} SkillPecentage={value.skillPercentage}/> 
+                    <SkillsContent 
+                        title={value.skillTitle} 
+                        imagePath={value.skillImagePath} 
+                        skillPecentage={value.skillPercentage}
+                        colorKey={key}
+                    /> 
                 ))}
             </AllSkillsContenWrapper>
             

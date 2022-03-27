@@ -13,14 +13,14 @@ export const TimelineBackground = styled.div`
 
 export const TimelineWrapper = styled.div`
     padding-bottom: 20px;
-    background-color: #F9F9F9;
+    background-color:  ${(props)=>props.theme.theme_11};
 `
 
 export const CateName = styled.span`
     display: inline-block;
     margin-top: 76px;
     font-size: 20px;
-    color: #4b4b4b;
+    color:  ${(props)=>props.theme.theme_2};
     opacity: 0.5;
 `
 
@@ -46,6 +46,7 @@ export const TimelineContentWrapper = styled.div`
 export const Period = styled.span`
     display: inline-box;
     font-size: 18px;
+    color : ${(props)=>props.theme.theme_13};
 
     @media screen and (max-width : 800px){
         display: none;
@@ -59,8 +60,9 @@ export const TimelineTitle = styled.div`
     font-size: 20px;
     border : 3px solid #F6C45A;
     border-radius: 20px;
-    background-color: #F2F2F2;
+    background-color: ${(props)=>props.theme.theme_12};
     cursor: pointer;
+    color : ${(props)=>props.theme.theme_13};
     
     &:hover{
         width: 520px;

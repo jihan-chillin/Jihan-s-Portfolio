@@ -12,6 +12,9 @@ export const theme = {
             'theme_9' : '#F6C45A',
             'theme_10' : '#F6C45A',
             'theme_11' : '#F9F9F9',
+            'theme_12' : '#FCFCFC',
+            'theme_13' : '#4B4B4B',
+            'theme_14' : '#AAAAAA',
         },
         dark : {
             'theme_1' : '#F2F2F2',
@@ -25,6 +28,9 @@ export const theme = {
             'theme_9' : '#F6C45A',
             'theme_10' : '#F6C45A',
             'theme_11' : '#1E2732',
+            'theme_12' : '#787D84',
+            'theme_13' : '#F2F2F2' ,
+            'theme_14' : '#F2F2F2',
         },
         spring :  {
             'theme_1' : '#29453C',
@@ -38,6 +44,9 @@ export const theme = {
             'theme_9' : '#F1E4AE',
             'theme_10' : '#DFD9C0',
             'theme_11' : '#FAF8F0',
+            'theme_12' : '#F6F5F1',
+            'theme_13' : '#4B4B4B',
+            'theme_14' : '#AAAAAA', 
         },
         summer :  {
             'theme_1' : '#F27959',
@@ -51,6 +60,9 @@ export const theme = {
             'theme_9' : '#7CB689',
             'theme_10' : '#B0CCB6',
             'theme_11' : '#FAF8F0',
+            'theme_12' : '#F4F1E5',
+            'theme_13' : '#4B4B4B', 
+            'theme_14' : '#AAAAAA',
         },
         autumn : {
             'theme_1' : '#7C3A2F',
@@ -63,7 +75,10 @@ export const theme = {
             'theme_8' : '#A48E70',
             'theme_9' : '#DBC7AC',
             'theme_10' : '#E9DFD1',
-            'theme_11' : '#FAF8F0  ',
+            'theme_11' : '#FAF8F0',
+            'theme_12' : '#EEE4D6',
+            'theme_13' : '#4B4B4B',
+            'theme_14' : '#AAAAAA',
         }, 
         winter : {
             'theme_1' : '#B56865',
@@ -77,15 +92,11 @@ export const theme = {
             'theme_9' : '#ACA7A4',
             'theme_10' : '#D1CCC9',
             'theme_11' : '#F9F9F9',
+            'theme_12' : '#F4F0F0',
+            'theme_13' : '#4B4B4B',
+            'theme_14' : '#AAAAAA', 
         }
     }
-}
-
-export const getThemeColor = (theme ='light') =>{
-    const themeColor = theme[theme]
-    const defaultColor = theme['light']
-
-    return themeColor || defaultColor
 }
 
 export default theme;

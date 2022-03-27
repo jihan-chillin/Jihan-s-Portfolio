@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import theme from '../../styles/theme.styles'
 
 export const AboutWrapper = styled.div`
     background-color: ${(props)=>props.theme.theme_5};
@@ -9,7 +8,7 @@ export const CateName = styled.span`
     display: inline-block;
     margin-top: 76px;
     font-size: 20px;
-    color: #4b4b4b;
+    color: ${(props)=>props.theme.theme_2};
     opacity: 0.5;
 
     @media screen and (max-width : 800px){
@@ -22,7 +21,7 @@ export const Moto = styled.span`
     margin: 16px 0 100px 0;
     font-size: 40px;
     font-weight: bold;
-    color : #4b4b4b;
+    color : ${(props)=>props.theme.theme_4};
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.);
 
     @media screen and (max-width: 800px) {
@@ -37,7 +36,6 @@ export const AboutContentWrapper = styled.div`
     padding-bottom: 160px;
     align-items: center;
     justify-content: space-between;
-    /* border : 1px solid black; */
 
     @media screen and (max-width: 800px) {
         display: block;
@@ -68,7 +66,7 @@ export const Name = styled.span`
     display: flex;
     font-size: 32px;
     font-weight: bold;
-    color: #4b4b4b;
+    color: ${(props)=>props.theme.theme_1};
 
     @media screen and (max-width: 800px) {
         display: inline-block;

@@ -1,6 +1,5 @@
-import styled, {ThemeProvider} from "styled-components";
+import styled from "styled-components";
 import {Link} from 'react-scroll';
-import theme from '../../styles/theme.styles'
 
 export const More = styled.img`
     vertical-align: middle;
@@ -16,8 +15,8 @@ export const SidebarNav = styled.div<{showSidebar : boolean}>`
     width: 260px;
     height: 100vh;
     z-index: 3;
-    border : 1px solid #AAAAAA;
-    background-color: white;
+    border : 1px solid ${(props)=>props.theme.theme_14};
+    background-color: ${(props)=>props.theme.theme_11};
     overflow: scroll ;
 `
 export const CloseButtonWrapper = styled.div`
@@ -36,11 +35,12 @@ export const SidebarContentWrapper = styled.div`
     text-align: center;
     padding : 18px 0;
     max-height: 260px;
-    border-bottom: 3px solid #AAAAAA;
+    border-bottom: 3px solid ${(props)=>props.theme.theme_14};
 `
 export const InfoText = styled.span`
     display: block;
     margin-top: 3px;
+    color : ${(props)=>props.theme.theme_13};
 `
 
 export const SidebarMenuWrapper = styled.div`
@@ -51,24 +51,25 @@ export const SidebarMenuWrapper = styled.div`
         text-align: center;
         padding : 18px 0;
         max-height: 260px;
-        border-bottom: 3px solid #AAAAAA;
+        border-bottom: 3px solid ${(props)=>props.theme.theme_13};
     }
 `
 
 export const SidebarMenuTitle = styled.span`
     display: flex;
     font-weight: bold;
+    color : ${(props)=>props.theme.theme_1};
 `
 export const SidebarMenuItem = styled(Link)`
     display: block;
     line-height: 32px;
     margin : 14px 0;
     font-size: 16px;
-    color : #4b4b4b;
+    color : ${(props)=>props.theme.theme_13};
     cursor: pointer;
 
     &:hover{
-        color : #000000;
+        color : ${(props)=>props.theme.theme_13};
         font-weight: bold;
     }
 `
@@ -92,11 +93,11 @@ export const SidebarModeImg = styled.img`
 export const SidebarModeText = styled.span`
     display: inline-block;
     font-size: 16px;
-    color : #4b4b4b;
+    color : ${(props)=>props.theme.theme_13};
     cursor: pointer;
 
     &:hover{
-        color: ${(props)=>props.color};
+        color: ${(props)=>props.theme.theme_3};
         font-weight: bold;
     }
 `

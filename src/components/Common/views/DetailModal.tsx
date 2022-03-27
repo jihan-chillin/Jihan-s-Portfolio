@@ -47,8 +47,8 @@ export function DetailModal({
         <>
             {cate == 'ProjectDetail' ? (
                 <ModalWrapper cate={'ProjectDetail'}>
-                    <ModalCloseButtonWrapper>
-                        <ModalCloseButton src='./closebtn.png' onClick={closeModal}/>
+                    <ModalCloseButtonWrapper onClick={closeModal}>
+                        <ModalCloseButton src='./closebtn.png'/>
                     </ModalCloseButtonWrapper>
                         <ModalContentWrapper>
                         <ModalContentTitle>기간</ModalContentTitle>

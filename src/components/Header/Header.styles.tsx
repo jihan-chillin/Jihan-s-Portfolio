@@ -25,7 +25,7 @@ export const MenuItem = styled(Link)`
     cursor: pointer;
 
     &:hover{
-        color : #000000;
+        color : ${(props)=>props.theme.theme_3};
         font-weight: bold;
     }
 

@@ -8,7 +8,7 @@ export const ModalWrapper = styled.div`
     z-index : 5;
     width : 440px;
     margin: 60px auto;
-    background-color: #E7E7E7 ;
+    background-color: ${(props)=>props.theme.theme_11};
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -48,7 +48,7 @@ export const ModalContentTitle = styled.span`
     margin-top : 16px;
     font-size: 16px;
     font-weight: bold;
-    color : #4B4B4B;
+    color : ${(props)=>props.theme.theme_1};
 
     @media screen and (max-width: 800px) {
         font-size: 14px;
@@ -58,7 +58,7 @@ export const ModalContentTitle = styled.span`
 export const ModalContentInfo = styled.div`
     margin-top: 8px;
     font-size: 14px;
-    color : #848484;
+    color : ${(props)=>props.theme.theme_12};
 
     @media screen and (max-width: 800px) {
         font-size: 12px;

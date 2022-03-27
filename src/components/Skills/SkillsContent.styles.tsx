@@ -35,6 +35,7 @@ export const SkillTitleWrapper = styled.div`
 export const SkillTitle = styled.span`
     font-size: 16px;
     font-weight: bold;
+    color : ${(props)=>props.theme.theme_13};
 
     @media screen and (max-width:800px) {
         font-size: 12px;
@@ -43,6 +44,7 @@ export const SkillTitle = styled.span`
 
 export const SkillPercentage = styled.span`
     font-size: 16px;
+    color : ${(props)=>props.theme.theme_13};
 
     @media screen and (max-width:800px) {
         font-size: 12px;

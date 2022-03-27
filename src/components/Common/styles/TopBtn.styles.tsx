@@ -7,7 +7,7 @@ export const TopButtonWrapper = styled.div`
     z-index: 1;
     width: 48px;
     height: 48px;
-    background-color: #4b4b4b;
+    background-color: ${(props)=>props.theme.theme_1};
     border-radius: 50%;
     cursor: pointer;
 

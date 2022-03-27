@@ -25,7 +25,7 @@ import theme from '../../styles/theme.styles';
 
 export function Sidebar() {
     const dispatch = useDispatch();
-    const {color} = useSelector((state:any)=>state.theme)
+    console.log(theme.color.light, "theme");
     const {me} = useSelector((state:any)=> state.user)
 
     // 사이드바 가져오기 
@@ -35,50 +35,12 @@ export function Sidebar() {
     },[showSidebar])
 
     // 라이트 - 다크 / 사계절모드 dispatch
-    
-    const changeToLight = useCallback((themecolor)=>{
+    const remoteTheme = useCallback((themecolor)=>{
         dispatch({
             type : REMOTE_THEME_REQUEST,
-            data : theme.color.dark
+            data : theme.color[themecolor]
         })
-    },[])
-
-    const changeToDark = useCallback(()=>{
-        dispatch({
-            type : REMOTE_THEME_REQUEST,
-            data : theme.color.dark
-        })
-    },[])
-    const changeToSpring = useCallback((themecolor)=>{
-        dispatch({
-            type : REMOTE_THEME_REQUEST,
-            data : theme[themecolor],
-        })
-        console.log('changeSpring')
-    },[])
-
-    const changeToSummer = useCallback((themecolor)=>{
-        dispatch({
-            type : REMOTE_THEME_REQUEST,
-            data : theme[themecolor],
-        })
-        console.log('changeSummer')
-    },[])
-
-    const changeToAutumn = useCallback((themecolor)=>{
-        dispatch({
-            type : REMOTE_THEME_REQUEST,
-            data : theme[themecolor],
-        })
-        console.log('changeAutumn')
-    },[])
-    const changeToWinter = useCallback((themecolor)=>{
-        dispatch({
-            type : REMOTE_THEME_REQUEST,
-            data : theme`${[themecolor]}`,
-        })
-        console.log('changeWinter')
-    },[])
+    },[]);
 
 
     return(
@@ -117,19 +79,19 @@ export function Sidebar() {
                 <SidebarContentWrapper>
                     <SidebarMenuTitle>mode</SidebarMenuTitle>
                     <SidebarModeItemWrapper>
-                        <SidebarModeImg onClick={()=>changeToLight('light')} src="/light.png"/> 
-                        <SidebarModeImg onClick={changeToDark} src="/dark.png"/> 
+                        <SidebarModeImg onClick={()=>remoteTheme('light')} src="/light.png"/> 
+                        <SidebarModeImg onClick={()=>remoteTheme('dark')} src="/dark.png"/> 
                     </SidebarModeItemWrapper> 
                     {me 
                         ? (
                             <>
                                 <SidebarModeItemWrapper>
-                                    <SidebarModeText onClick={()=>changeToSpring('spring')} color={'#AAC97D'}>봄</SidebarModeText>
-                                    <SidebarModeText onClick={()=>changeToSummer('summer')} color={'#1F7181'}>여름</SidebarModeText>
+                                    <SidebarModeText onClick={()=>remoteTheme('spring')}>봄</SidebarModeText>
+                                    <SidebarModeText onClick={()=>remoteTheme('summer')}>여름</SidebarModeText>
                                 </SidebarModeItemWrapper>
                                 <SidebarModeItemWrapper>
-                                    <SidebarModeText onClick={()=>changeToAutumn('autumn')} color={'#F4BE3E'}>가을</SidebarModeText>
-                                    <SidebarModeText onClick={()=>changeToWinter('winter')} color={'#D6BEB4'}>겨울</SidebarModeText>
+                                    <SidebarModeText onClick={()=>remoteTheme('autumn')}>가을</SidebarModeText>
+                                    <SidebarModeText onClick={()=>remoteTheme('winter')}>겨울</SidebarModeText>
                                 </SidebarModeItemWrapper>
                             </>
                         ) : (

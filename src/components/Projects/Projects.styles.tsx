@@ -14,14 +14,14 @@ export const ProjectBackground = styled.div`
 export const ProjectsWrapper = styled.div`
     position: relative;
     margin: 0 auto;
-    background-color: #E7E7E7;
+    background-color: ${(props)=>props.theme.theme_5}
 `
 
 export const CateName = styled.span`
     display: inline-block;
     margin-top: 76px;
     font-size: 20px;
-    color: #4b4b4b;
+    color: ${(props)=>props.theme.theme_2};
     opacity: 0.5;
 
     @media screen and (max-width : 800px){

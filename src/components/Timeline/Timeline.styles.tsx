@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+export const TimelineBackground = styled.div`
+    display: ${(props)=> props.showTimelineDetail ? 'block' : 'none'};
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #4b4b4b;
+    opacity: 0.6;
+`
+
 export const TimelineWrapper = styled.div`
     padding-bottom: 20px;
     background-color: #F9F9F9;
@@ -14,6 +25,7 @@ export const CateName = styled.span`
 `
 
 export const TimelineWholeContentWrapper = styled.div`
+    position : relative;
     margin: 76px auto;
 `
 
@@ -47,8 +59,7 @@ export const TimelineTitle = styled.div`
     font-size: 20px;
     border : 3px solid #F6C45A;
     border-radius: 20px;
-    /* background-color: #F2F2F2; */
-    background-color: red;
+    background-color: #F2F2F2;
     cursor: pointer;
     
     &:hover{

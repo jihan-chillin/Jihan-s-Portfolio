@@ -1,63 +1,73 @@
-import React, {useRef, useState, useEffect} from 'react'
-import { useSelector } from 'react-redux'
+import React, {useCallback, useEffect} from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { 
     ProjectBackground,
     ProjectsWrapper, 
     CateName,
     SliderWholeContainer,
     ForwardArrow,
-    BackwardArrow
+    BackwardArrow,
+    ProjectInfo, 
+    ProjectTitle,
+    SliderContainer,
+    SliderContent,
+    SliderImgContainer,
+    ProjectDetailButton,
+    SliderImg,
 } from './Projects.styles'
 
-import { Slider } from '../Slider/Slider'
+import {TOGGLE_PROJECT_DETAIL_REQUEST} from '../../../reducers/projectsReducer' 
+import { DetailModal } from '../Common/views/DetailModal'
 
 export function Projects() {
-    const {ProjectContent} = useSelector((state:any)=> state.project);
-    const {showProjectDetail} = useSelector((state:any)=>state.modal);
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const slideRef = useRef(null);
+    const {
+        ProjectContent, 
+        showProjectDetail,
+        projectKey
+    } = useSelector((state:any)=> state.project);
+    
+    const dispatch = useDispatch();
 
-    const TOTAL_SLIDES = 2;
+    const onShowModal = useCallback((key)=>{
+        dispatch({
+            type : TOGGLE_PROJECT_DETAIL_REQUEST,
+            data : {
+                showProjectDetail : true,
+                projectKey : key
+            },
+        })
+    },[])
 
-    const moveRight = () => {
+    const goForward = useCallback(()=>{
+        console.log("앞으로");
+    },[])
 
-        if (currentSlide >= TOTAL_SLIDES) {
-            setCurrentSlide(0);
-        } else {
-            setCurrentSlide(currentSlide + 1);
-        }
-    };
-
-    const moveLeft = () => {
-
-        if (currentSlide === 0) {
-            setCurrentSlide(TOTAL_SLIDES);
-        } else {
-            setCurrentSlide(currentSlide - 1);
-        }
-    };
-
-    useEffect(() => {
-        
-        const halfAni = currentSlide * 50;
-        slideRef.current.style.transition = "all 0.5s ease-in-out";
-        // halfAni
-        slideRef.current.style.transform = `translateX(-${halfAni}%)`;
-        // slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
-    }, [currentSlide]);
+    const goBackward = useCallback(()=>{
+        console.log("뒤로");
+    },[])
 
     return (
         <>
             <ProjectsWrapper id="project">
                 <ProjectBackground showProjectDetail={showProjectDetail}/>
                 <CateName>Projects</CateName>
-                <SliderWholeContainer ref={slideRef}>
-                    {ProjectContent.map((value)=>(
-                        <Slider title={value.ProjectTitle} info={value.ProjectInfo} detailId={value.ProjectId}/>
+                <SliderWholeContainer>
+                    {showProjectDetail ? <DetailModal detailId={projectKey} cate={'ProjectDetail'}/> : <></>}
+                    {ProjectContent.map((value,key)=>(
+                        <SliderContainer>
+                            <SliderImgContainer>
+                                <SliderImg src='./graphql.png'/>
+                            </SliderImgContainer>
+                            <SliderContent>
+                                <ProjectTitle>{value.ProjectTitle}</ProjectTitle>
+                                <ProjectInfo>{value.ProjectInfo}</ProjectInfo>
+                                <ProjectDetailButton src='./detail.png' onClick={()=>onShowModal(key)}/>
+                            </SliderContent>
+                        </SliderContainer>
                     ))}
+                <ForwardArrow onClick={goForward} src='/forwardArrow.png'/>
+                <BackwardArrow onClick={goBackward} src='/backwardArrow.png'/>
                 </SliderWholeContainer>
-                <ForwardArrow onClick={moveLeft} src='/forwardArrow.png'/>
-                <BackwardArrow onClick={moveRight} src='/backwardArrow.png'/>
             </ProjectsWrapper>
         </>
     )

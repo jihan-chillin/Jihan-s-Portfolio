@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { TOGGLE_PROJECT_DETAIL_REQUEST } from '../../../reducers/modalReducer';
+// import { TOGGLE_PROJECT_DETAIL_REQUEST } from '../../../reducers/modalReducer';
 import { DetailModal } from '../Common/views/DetailModal';
 import { 
     ProjectInfo, 
@@ -21,6 +21,7 @@ import {
 export function  Slider({
     title,
     info,
+    detailId
 }:ISlider){
     
     const dispatch = useDispatch();
@@ -37,7 +38,7 @@ export function  Slider({
 
     return(
         <>
-            {showProjectDetail ? <DetailModal cate={'ProjectDetail'}/> : <></>}
+            {showProjectDetail ? <DetailModal detailId={detailId} cate={'ProjectDetail'}/> : <></>}
             <SliderContainer>
                 <SliderImgContainer>
                     <SliderImg src='./graphql.png'/>

@@ -2,6 +2,7 @@ import React, { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { DetailModal } from '../Common/views/DetailModal';
 import { 
+    TimelineBackground,
     CateName,
     Period, 
     TimelineContentWrapper, 
@@ -10,36 +11,35 @@ import {
     TimelineWrapper 
 } from './Timeline.styles'
 
-import {
-    TOGGLE_TIMELINE_DETAIL_REQUEST
-} from '../../../reducers/modalReducer'
+import { TOGGLE_TIMELINE_DETAIL_REQUEST } from '../../../reducers/timelineReducer';
 
 export function Timeline() {
-    const {TimelineContents} = useSelector((state)=> state.timeline);
-    const {showTimelineDetail} = useSelector((state:any) => state.modal)
-    
+    const {TimelineContents, showTimelineDetail, timelineKey} = useSelector((state:any)=> state.timeline);
 
     const dispatch = useDispatch();
-    const showTimelineModal = useCallback(()=>{
+    
+    const showTimelineModal = useCallback((key)=>{
         dispatch({
             type : TOGGLE_TIMELINE_DETAIL_REQUEST,
-            data : true,
+            data : {
+                showTimelineDetail : true,
+                timelineKey : key
+            }
         })
-
-        console.log(showTimelineDetail, "showTimelineDetail")
     },[])
     
     
     return (
         <>
             <TimelineWrapper id="timeline">
+                <TimelineBackground showTimelineDetail={showTimelineDetail}/>
                 <CateName>Timeline</CateName>
                 <TimelineWholeContentWrapper>
-                    {TimelineContents.map((value)=>(
+                    {showTimelineDetail ? <DetailModal detailId={timelineKey}/> : <></>}
+                    {TimelineContents.map((value, key)=>(
                         <TimelineContentWrapper>
-                            {/* {showTimelineDetail ? <DetailModal/> : <></>} */}
                             <Period>{value.timelinePeriod}</Period>
-                            <TimelineTitle onClick={showTimelineModal}>{value.timelineTitle}</TimelineTitle>
+                            <TimelineTitle onClick={()=>showTimelineModal(key)}>{value.timelineTitle}</TimelineTitle>
                         </TimelineContentWrapper>
                     ))}
                 </TimelineWholeContentWrapper>

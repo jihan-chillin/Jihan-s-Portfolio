@@ -9,7 +9,7 @@ import '../styles/global.css';
 
 function app({ Component, pageProps } : AppProps) {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme.color.light}>
         <Component {...pageProps} />
       </ThemeProvider>
     )

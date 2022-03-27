@@ -5,6 +5,7 @@ export const ModalWrapper = styled.div`
     top : 0%;
     left : 25%;
     display: inline-block;
+    z-index : 5;
     width : 440px;
     margin: 60px auto;
     background-color: #E7E7E7 ;
@@ -14,8 +15,8 @@ export const ModalWrapper = styled.div`
     @media screen and (max-width: 800px) {
         position: absolute;
         top : 5%;
-        left : 8%;
-        width: 300px;
+        left : ${(props)=>props.cate === 'ProjectDetail' ? '11' : '20'}%;
+        width: 280px;
         margin: 40px auto;
     }
 `

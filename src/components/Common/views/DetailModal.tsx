@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { 
     ModalCloseButton, 
     ModalCloseButtonWrapper, 
@@ -9,17 +9,25 @@ import {
     ModalWrapper 
 } from '../styles/DetailModal.styles';
 
-import {TOGGLE_PROJECT_DETAIL_REQUEST, TOGGLE_TIMELINE_DETAIL_REQUEST} from '../../../../reducers/modalReducer'
+import {TOGGLE_PROJECT_DETAIL_REQUEST} from '../../../../reducers/projectsReducer'
+import { TOGGLE_TIMELINE_DETAIL_REQUEST } from '../../../../reducers/timelineReducer';
 
 export interface IDetailModal{
     cate? : string,
+    detailId? : any,
 }
 
 export function DetailModal({
     cate,
+    detailId,
 }:IDetailModal){
-
+    const {ProjectContent} = useSelector((state:any)=>state.project)
+    const {TimelineContents} = useSelector((state:any)=>state.timeline)
     const dispatch = useDispatch();
+    
+    console.log(ProjectContent, "ProjectContent 뭐있니.")
+    console.log(detailId, "눌린 detailId");
+    console.log(ProjectContent[detailId], "이거 찐으로 궁금함");
 
     const closeModal = useCallback(()=>{
         dispatch({
@@ -37,52 +45,42 @@ export function DetailModal({
    
     return(
         <>
-            <ModalWrapper>
-                    {cate == 'ProjectDetail' ? (
-                        <>
-                            <ModalCloseButtonWrapper>
-                                <ModalCloseButton src='./closebtn.png' onClick={closeModal}/>
-                            </ModalCloseButtonWrapper>
-                             <ModalContentWrapper>
-                                <ModalContentTitle>기간</ModalContentTitle>
-                                <ModalContentInfo>
-                                2020.03.01 ~ 2020.03.04
-                                </ModalContentInfo>
+            {cate == 'ProjectDetail' ? (
+                <ModalWrapper cate={'ProjectDetail'}>
+                    <ModalCloseButtonWrapper>
+                        <ModalCloseButton src='./closebtn.png' onClick={closeModal}/>
+                    </ModalCloseButtonWrapper>
+                        <ModalContentWrapper>
+                        <ModalContentTitle>기간</ModalContentTitle>
+                        <ModalContentInfo>
+                        {ProjectContent[detailId].period}
+                        </ModalContentInfo>
 
-                                <ModalContentTitle>기술 스택</ModalContentTitle>
-                                <ModalContentInfo>
-                                뭠너우머누엄누어문어ㅜㅁㄴ우먼웜ㄴ웜누언어문어
-                                무넝무ㅏㄴ어ㅜ머ㅏㄴ우ㅏ먼워ㅏㅁ ㅁ누어ㅏ문아ㅓ
-                                ㅜㅁ나우마asdasdasdasdasdasdasdasdasdㄴ우
-                                </ModalContentInfo>
+                        <ModalContentTitle>기술 스택</ModalContentTitle>
+                        <ModalContentInfo>
+                        {ProjectContent[detailId].techStack}
+                        </ModalContentInfo>
 
-                                <ModalContentTitle>나의 기여도</ModalContentTitle>
-                                <ModalContentInfo>
-                                뭠너우머누엄누어문어ㅜㅁㄴ우먼웜ㄴ웜누언어문어
-                                무넝무ㅏㄴ어ㅜ머ㅏㄴ우ㅏ먼워ㅏㅁ ㅁ누어ㅏ문아ㅓ
-                                ㅜㅁ나우마asdasdasdasdasdasdasdasdasdㄴ우
-                                </ModalContentInfo>
-                            </ModalContentWrapper>
-                        </>
-                    ) : (
-                        <>
-                            <ModalCloseButtonWrapper onClick={closeTimelineModal}>
-                                <ModalCloseButton src='./closebtn.png'/>
-                            </ModalCloseButtonWrapper>
-                            <ModalContentWrapper>
-                                <ModalContentTitle>활동 내용</ModalContentTitle>
-                                <ModalContentInfo>
-                                뭠너우머누엄누어문어ㅜㅁㄴ우먼웜ㄴ웜누언어문어
-                                무넝무ㅏㄴ어ㅜ머ㅏㄴ우ㅏ먼워ㅏㅁ ㅁ누어ㅏ문아ㅓ
-                                ㅜㅁ나우마asdasdasdasdasdasdasdasdasdㄴ우
-                                </ModalContentInfo>
+                        <ModalContentTitle>나의 기여도</ModalContentTitle>
+                        <ModalContentInfo>{ProjectContent[detailId].contribution}</ModalContentInfo>
+                    </ModalContentWrapper>
+                </ModalWrapper>
+            ) : (
+                <ModalWrapper>
+                    <ModalCloseButtonWrapper onClick={closeTimelineModal}>
+                        <ModalCloseButton src='./closebtn.png'/>
+                    </ModalCloseButtonWrapper>
+                    <ModalContentWrapper>
+                        <ModalContentTitle>활동 내용</ModalContentTitle>
+                        <ModalContentInfo>
+                            {TimelineContents[detailId].timelineInfo}
+                        </ModalContentInfo>
 
-                                <ModalContentTitle>발표영상 링크</ModalContentTitle>
-                                <a href='https://www.youtube.com/watch?v=4iOwYHKXijw&t=300s'><ModalContentInfo>요ㅛㅇ</ModalContentInfo></a>
-                            </ModalContentWrapper>
-                        </>
-                    )}
-            </ModalWrapper>
+                        <ModalContentTitle>발표영상 링크</ModalContentTitle>
+                        <a href={TimelineContents[detailId].timelinelink}><ModalContentInfo>요ㅛㅇ</ModalContentInfo></a>
+                    </ModalContentWrapper>
+                </ModalWrapper>
+            )}
         </>
         
     )

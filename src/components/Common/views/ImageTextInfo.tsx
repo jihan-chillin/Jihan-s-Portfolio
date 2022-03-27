@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 import {
     ImageTextWrapper,
@@ -17,9 +18,12 @@ export function ImageTextInput({
     imagePath,
     info
 }:IImageTextInput){
+    const {color} = useSelector((state:any)=>state.theme);
+    const dark = color.theme_1 == '#F2F2F2'
+    
     return (
         <ImageTextWrapper>
-            <InfoImage src={imagePath}/>
+            <InfoImage dark={dark}src={imagePath}/>
             <a href={page}><InfoText>{info}</InfoText></a>
         </ImageTextWrapper>
     )

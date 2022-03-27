@@ -4,6 +4,21 @@ export const AboutWrapper = styled.div`
     background-color: ${(props)=>props.theme.theme_5};
 `
 
+export const ProfileContainer = styled.div`
+    height : 296px;
+    width : 296px;
+    border-radius : 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color : ${(props)=>props.theme.theme_3};
+
+    @media screen and (max-width : 800px){
+        height : 180px;
+        width : 180px;
+        border-radius : 50%;
+        margin: 0 auto;
+    }
+`
+
 export const CateName = styled.span`
     display: inline-block;
     margin-top: 76px;
@@ -31,7 +46,7 @@ export const Moto = styled.span`
 
 export const AboutContentWrapper = styled.div`
     display: flex;
-    max-width: 800px;
+    max-width: 780px;
     margin: 0 auto;
     padding-bottom: 160px;
     align-items: center;
@@ -45,10 +60,10 @@ export const AboutContentWrapper = styled.div`
 
 export const Profile = styled.img`
     vertical-align: middle;
-    width: 320px;
+    width: 296px;
 
     @media screen and (max-width: 800px) {
-        width: 200px ;
+        width: 180px;
     }
 `
 

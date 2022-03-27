@@ -12,7 +12,8 @@ export const TopButtonWrapper = styled.div`
     cursor: pointer;
 
     @media screen and (max-width: 800px) {
-        font-size: 16px;
+        width: 36px;
+        height: 36px;
         bottom : 2rem;
         right : 2.5rem;
     }
@@ -22,4 +23,11 @@ export const TopTriangle = styled.img`
     display: block;
     margin: 10px auto;
     width: 28px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
+    
+    @media screen and (max-width: 800px) {
+        margin: 8px auto;
+        width: 21px;
+        height: 21px;   
+    }
 `

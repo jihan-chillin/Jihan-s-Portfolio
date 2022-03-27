@@ -3,7 +3,7 @@ import produce from "immer";
 export const initialState = {
     id : 1,
     moto : '꾸준한 성장을 목표로 하는 FE개발자',
-    profile : "./proflie_light.png",
+    profile : "./profile.png",
     profilePath : [], // 프로필 업로드 시 저장되는 경로
     InfoAboutMe : [{
         icon : "./mail.png",

@@ -20,6 +20,9 @@ import {TOGGLE_PROJECT_DETAIL_REQUEST} from '../../../reducers/projectsReducer'
 import { DetailModal } from '../Common/views/DetailModal'
 
 export function Projects() {
+    const {color} = useSelector((state:any)=>state.theme)
+    const dark = color.theme_1 == '#F2F2F2'
+
     const {
         ProjectContent, 
         showProjectDetail,
@@ -65,8 +68,8 @@ export function Projects() {
                             </SliderContent>
                         </SliderContainer>
                     ))}
-                <ForwardArrow onClick={goForward} src='/forwardArrow.png'/>
-                <BackwardArrow onClick={goBackward} src='/backwardArrow.png'/>
+                <ForwardArrow dark={dark} onClick={goForward} src='/forwardArrow.png'/>
+                <BackwardArrow dark={dark} onClick={goBackward} src='/backwardArrow.png'/>
                 </SliderWholeContainer>
             </ProjectsWrapper>
         </>

@@ -21,6 +21,9 @@ export function DetailModal({
     cate,
     detailId,
 }:IDetailModal){
+    const {color} = useSelector((state:any)=>state.theme)
+    const dark = color.theme_1 == '#F2F2F2' 
+
     const {ProjectContent} = useSelector((state:any)=>state.project)
     const {TimelineContents} = useSelector((state:any)=>state.timeline)
     const dispatch = useDispatch();
@@ -48,7 +51,7 @@ export function DetailModal({
             {cate == 'ProjectDetail' ? (
                 <ModalWrapper cate={'ProjectDetail'}>
                     <ModalCloseButtonWrapper onClick={closeModal}>
-                        <ModalCloseButton src='./closebtn.png'/>
+                        <ModalCloseButton dark={dark} src='./closebtn.png'/>
                     </ModalCloseButtonWrapper>
                         <ModalContentWrapper>
                         <ModalContentTitle>기간</ModalContentTitle>
@@ -68,7 +71,7 @@ export function DetailModal({
             ) : (
                 <ModalWrapper>
                     <ModalCloseButtonWrapper onClick={closeTimelineModal}>
-                        <ModalCloseButton src='./closebtn.png'/>
+                        <ModalCloseButton dark={dark} src='./closebtn.png'/>
                     </ModalCloseButtonWrapper>
                     <ModalContentWrapper>
                         <ModalContentTitle>활동 내용</ModalContentTitle>

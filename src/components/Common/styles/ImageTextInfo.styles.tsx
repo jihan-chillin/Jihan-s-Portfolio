@@ -13,11 +13,13 @@ export const InfoImage = styled.img`
     display: inline-block;
     margin-right: 24px;
     width: 32px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
 `
 
 export const InfoText = styled.span`
     display: inline-block;
     font-size: 20px;
+    color : ${(props)=>props.theme.theme_13};
 
     @media screen and (max-width: 800px) {
         font-size: 16px;

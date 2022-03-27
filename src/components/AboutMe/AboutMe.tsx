@@ -7,6 +7,7 @@ import {
     Moto, 
     Name, 
     Profile,
+    ProfileContainer,
 } from './AboutMe.styles'
 
 import { ImageTextInput } from '../Common/views/ImageTextInfo'
@@ -25,7 +26,9 @@ export function AboutMe () {
             <CateName>About Me</CateName>
             <Moto>{moto}</Moto>
             <AboutContentWrapper>
-                <Profile src={profile}/>
+                <ProfileContainer>
+                    <Profile src={profile}/>
+                </ProfileContainer>
                 <AboutContent>
                     <Name>김지한 (jihan kim)</Name>
                     {InfoAboutMe.map((value)=>(

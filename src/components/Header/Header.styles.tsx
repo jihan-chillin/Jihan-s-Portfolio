@@ -7,10 +7,12 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     padding : 0 40px;
     height: 88px;
+    background-color: ${(props)=>props.theme.theme_11};
 `
 
 export const LogoImage = styled.img`
     width: 60px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
 `
 export const MenuWrapper = styled.div`
     position: relative;
@@ -21,11 +23,10 @@ export const MenuItem = styled(Link)`
     vertical-align: middle;
     margin-right: 40px;
     font-size: 16px;
-    color : #4b4b4b;
+    color : ${(props)=>props.theme.theme_13};
     cursor: pointer;
 
     &:hover{
-        color : ${(props)=>props.theme.theme_3};
         font-weight: bold;
     }
 

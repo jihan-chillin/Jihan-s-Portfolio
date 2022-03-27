@@ -31,6 +31,7 @@ export const ModalCloseButton = styled.img`
     top : 30px;
     right: 30px;
     width: 16px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 `
 
@@ -58,7 +59,7 @@ export const ModalContentTitle = styled.span`
 export const ModalContentInfo = styled.div`
     margin-top: 8px;
     font-size: 14px;
-    color : ${(props)=>props.theme.theme_12};
+    color : ${(props)=>props.theme.theme_14};
 
     @media screen and (max-width: 800px) {
         font-size: 12px;

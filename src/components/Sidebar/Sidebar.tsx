@@ -24,6 +24,9 @@ import {
 import theme from '../../styles/theme.styles';
 
 export function Sidebar() {
+    const {color} = useSelector((state:any)=>state.theme)
+    const dark = color.theme_1 == '#F2F2F2' 
+
     const dispatch = useDispatch();
     console.log(theme.color.light, "theme");
     const {me} = useSelector((state:any)=> state.user)
@@ -45,16 +48,16 @@ export function Sidebar() {
 
     return(
         <>
-            <More src="/more.png" onClick={ToggleSidebar}/>
+            <More src="/more.png" dark={dark} onClick={ToggleSidebar}/>
                 
             <SidebarNav showSidebar={showSidebar}>
                 <CloseButtonWrapper>
-                    <CloseButton src="./closebtn.png" onClick={ToggleSidebar}/>
+                    <CloseButton src="./closebtn.png" dark={dark} onClick={ToggleSidebar}/>
                 </CloseButtonWrapper>
                 {me 
                     ? (
                         <SidebarContentWrapper>
-                        <InfoText><span style={{fontWeight : 'bold'}}>{me.nickname}</span> 님</InfoText>
+                        <InfoText><span style={{fontWeight : 'bold', color : color.theme_3}}>{me.nickname}</span>님</InfoText>
                         <InfoText>안녕하세요!</InfoText>
                         <RoundButton/>
                         </SidebarContentWrapper>
@@ -79,8 +82,8 @@ export function Sidebar() {
                 <SidebarContentWrapper>
                     <SidebarMenuTitle>mode</SidebarMenuTitle>
                     <SidebarModeItemWrapper>
-                        <SidebarModeImg onClick={()=>remoteTheme('light')} src="/light.png"/> 
-                        <SidebarModeImg onClick={()=>remoteTheme('dark')} src="/dark.png"/> 
+                        <SidebarModeImg dark={dark} onClick={()=>remoteTheme('light')} src="/light.png"/> 
+                        <SidebarModeImg dark={dark} onClick={()=>remoteTheme('dark')} src="/dark.png"/> 
                     </SidebarModeItemWrapper> 
                     {me 
                         ? (

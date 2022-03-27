@@ -48,6 +48,7 @@ export const ForwardArrow = styled.img`
     top: 50%;
     left: 0%;
     width : 20px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 
     @media screen and (max-width : 800px){
@@ -63,6 +64,7 @@ export const BackwardArrow = styled.img`
     right: 0%;
     width : 20px;
     cursor: pointer;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     
     @media screen and (max-width : 800px){
         right: 0%; 

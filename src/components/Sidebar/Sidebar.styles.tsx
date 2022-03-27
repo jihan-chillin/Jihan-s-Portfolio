@@ -4,6 +4,7 @@ import {Link} from 'react-scroll';
 export const More = styled.img`
     vertical-align: middle;
     width: 28px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 `
 
@@ -15,7 +16,7 @@ export const SidebarNav = styled.div<{showSidebar : boolean}>`
     width: 260px;
     height: 100vh;
     z-index: 3;
-    border : 1px solid ${(props)=>props.theme.theme_14};
+    border-left : 1px solid ${(props)=>props.theme.theme_14};
     background-color: ${(props)=>props.theme.theme_11};
     overflow: scroll ;
 `
@@ -28,6 +29,7 @@ export const CloseButton = styled.img`
     position: absolute;
     right: 0;
     width: 16px;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 `
 
@@ -69,7 +71,7 @@ export const SidebarMenuItem = styled(Link)`
     cursor: pointer;
 
     &:hover{
-        color : ${(props)=>props.theme.theme_13};
+        color : ${(props)=>props.theme.theme_3};
         font-weight: bold;
     }
 `
@@ -84,9 +86,11 @@ export const SidebarModeImg = styled.img`
     display: inline-block;
     width: 24px;
     cursor: pointer;
+    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
 
     &:hover{
-        filter: contrast(200%); 
+        filter: contrast(200%) ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
+        /* filter : invert(100%);  */
     }
 `
 

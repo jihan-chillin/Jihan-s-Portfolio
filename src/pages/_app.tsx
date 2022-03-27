@@ -9,7 +9,6 @@ import { useSelector } from 'react-redux';
 
 function app({ Component, pageProps } : AppProps) {
   const {color} = useSelector((state:any)=> state.theme)
-
     return (
       <ThemeProvider theme={color}>
         <Component {...pageProps} />

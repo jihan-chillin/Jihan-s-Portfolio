@@ -1,12 +1,12 @@
 import React, {useCallback, useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+
+
 import { 
     ProjectBackground,
     ProjectsWrapper, 
     CateName,
     SliderWholeContainer,
-    ForwardArrow,
-    BackwardArrow,
     ProjectInfo, 
     ProjectTitle,
     SliderContainer,
@@ -14,10 +14,13 @@ import {
     SliderImgContainer,
     ProjectDetailButton,
     SliderImg,
+    StyledSlider,
 } from './Projects.styles'
+
 
 import {TOGGLE_PROJECT_DETAIL_REQUEST} from '../../../reducers/projectsReducer' 
 import { DetailModal } from '../Common/views/DetailModal'
+import { Slider } from '../Slider/SliderComponent'
 
 export function Projects() {
     const {color} = useSelector((state:any)=>state.theme)
@@ -41,13 +44,23 @@ export function Projects() {
         })
     },[])
 
-    const goForward = useCallback(()=>{
-        console.log("앞으로");
-    },[])
-
-    const goBackward = useCallback(()=>{
-        console.log("뒤로");
-    },[])
+    const settings ={
+        dots : false,
+        isFinite : true,
+        speed: 500, // 넘어가는 속도는 몇으로 할 것인지
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        responsive : [{
+            breakpoint : 800,
+            settings : {
+                dots : false,
+                isFinite : true,
+                speed: 500, // 넘어가는 속도는 몇으로 할 것인지
+                slidesToShow: 1, 
+                slidesToScroll: 1,
+            }
+        }]
+    }
 
     return (
         <>
@@ -56,20 +69,20 @@ export function Projects() {
                 <CateName>Projects</CateName>
                 <SliderWholeContainer>
                     {showProjectDetail ? <DetailModal detailId={projectKey} cate={'ProjectDetail'}/> : <></>}
-                    {ProjectContent.map((value,key)=>(
-                        <SliderContainer>
-                            <SliderImgContainer>
-                                <SliderImg src='./graphql.png'/>
-                            </SliderImgContainer>
-                            <SliderContent>
-                                <ProjectTitle>{value.ProjectTitle}</ProjectTitle>
-                                <ProjectInfo>{value.ProjectInfo}</ProjectInfo>
-                                <ProjectDetailButton src='./detail.png' onClick={()=>onShowModal(key)}/>
-                            </SliderContent>
-                        </SliderContainer>
-                    ))}
-                <ForwardArrow dark={dark} onClick={goForward} src='/forwardArrow.png'/>
-                <BackwardArrow dark={dark} onClick={goBackward} src='/backwardArrow.png'/>
+                            <StyledSlider {...settings}>
+                                {ProjectContent.map((value,key)=>(
+                                    <SliderContainer>
+                                        <SliderImgContainer className='slick-slide'>
+                                            <SliderImg src='./graphql.png'/>
+                                        </SliderImgContainer>
+                                        <SliderContent>
+                                            <ProjectTitle>{value.ProjectTitle}</ProjectTitle>
+                                            <ProjectInfo>{value.ProjectInfo}</ProjectInfo>
+                                            <ProjectDetailButton src='./detail.png' onClick={()=>onShowModal(key)}/>
+                                        </SliderContent>
+                                    </SliderContainer>
+                                ))}
+                            </StyledSlider>
                 </SliderWholeContainer>
             </ProjectsWrapper>
         </>

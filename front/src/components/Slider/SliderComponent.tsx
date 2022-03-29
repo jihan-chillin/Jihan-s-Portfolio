@@ -12,6 +12,9 @@ import {
     SliderImg,
  } from './Slider.styles';
 
+import {TOGGLE_PROJECT_DETAIL_REQUEST} from '../../../reducers/projectsReducer' 
+
+
  export interface ISlider{
     title : string,
     info : string,
@@ -24,21 +27,23 @@ export function  Slider({
     detailId
 }:ISlider){
     
+    // const dispatch = useDispatch();
+
     const dispatch = useDispatch();
 
-    const {showProjectDetail} = useSelector((state)=>state.modal)
-
-    const onShowModal = useCallback(()=>{
+    const onShowModal = useCallback((key)=>{
         dispatch({
             type : TOGGLE_PROJECT_DETAIL_REQUEST,
-            data : true,
+            data : {
+                showProjectDetail : true,
+                projectKey : key
+            },
         })
     },[])
 
 
     return(
         <>
-            {showProjectDetail ? <DetailModal detailId={detailId} cate={'ProjectDetail'}/> : <></>}
             <SliderContainer>
                 <SliderImgContainer>
                     <SliderImg src='./graphql.png'/>

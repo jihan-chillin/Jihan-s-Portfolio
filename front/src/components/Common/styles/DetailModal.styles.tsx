@@ -5,7 +5,7 @@ export const ModalWrapper = styled.div`
     top : 0%;
     left : 25%;
     display: inline-block;
-    z-index : 5;
+    z-index : 1005;
     width : 440px;
     margin: 60px auto;
     background-color: ${(props)=>props.theme.theme_11};

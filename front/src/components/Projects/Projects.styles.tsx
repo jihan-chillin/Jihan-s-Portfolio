@@ -1,4 +1,7 @@
-import styled from 'styled-components'
+import styled,{ keyframes, css } from 'styled-components'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const ProjectBackground = styled.div`
     display: ${(props)=> props.showProjectDetail ? 'block' : 'none'};
@@ -14,7 +17,7 @@ export const ProjectBackground = styled.div`
 export const ProjectsWrapper = styled.div`
     position: relative;
     margin: 0 auto;
-    background-color: ${(props)=>props.theme.theme_5}
+    background-color: ${(props)=>props.theme.theme_5};
 `
 
 export const CateName = styled.span`
@@ -30,60 +33,69 @@ export const CateName = styled.span`
 `
 
 export const SliderWholeContainer = styled.div`
-    position : relative;
-    display: flex;
     margin: 0 auto;
+    width: 98%;
+`
+
+// react-slick 커스텀 
+export const StyledSlider = styled(Slider)`
+    margin: 0 auto;
+    padding: 80px 200px;
     width: 800px;
+    border : 20px;
     align-items: center;
-    overflow: hidden;
 
     @media screen and (max-width : 800px){
-        width: 360px;   
+        margin: 0 auto;
+        padding: 36px 80px;
+        width: 80%;  
+        border : 20px;
+        align-items: center;
     }
-`
 
-export const ForwardArrow = styled.img`
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 0%;
-    width : 20px;
-    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
-    cursor: pointer;
+    .slick-prev {
+    left: 50px !important;
+    bottom : 50%;
+    z-index: 1000;
 
     @media screen and (max-width : 800px){
-        left: 0%;
-        width: 16px;   
+        left: 30px !important;
     }
-`
+  }
+  .slick-prev:before{
+    color : ${(props)=>props.theme.theme_1};
+  }
 
-export const BackwardArrow = styled.img`
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    right: 0%;
-    width : 20px;
-    cursor: pointer;
-    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
-    
+  .slick-next {
+    right: 50px !important;
+    z-index: 1000;
+
     @media screen and (max-width : 800px){
-        right: 0%; 
-        width: 16px;   
+        right: 30px !important;
     }
+  }
+
+  .slick-next:before{
+    color : ${(props)=>props.theme.theme_1};
+  }
 `
 
-// 여기 Slider 스타일 복붙
 export const SliderContainer = styled.div`
     display: inline-block;
-    width : 300px;
-    height : 450px;
-    margin : 60px 30px 60px 60px;
+    width : 200px;
+    height : 480px;
+    margin : 0px auto;
     background-color: #F2F2F2;
     border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow : visible !important;
 
     @media screen and (max-width : 800px){
-        margin : 60px 30px;   
+        width : 180px;
+        height : 480px; 
+    }
+
+    @media screen and (max-width : 600px){
+        height : 380px;
     }
 `
 
@@ -91,24 +103,38 @@ export const SliderImgContainer = styled.div`
     width: 100%;
     height : 240px;
     background-color: #AAAAAA;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0 ;
+
+    @media screen and (max-width : 600px){
+        width: 100%;
+        height : 172px;
+    }
 `
+
 export const SliderImg = styled.img`
+    display: inline-block;
+    margin: 0 auto;
     height: 100%;
 `
 export const SliderContent = styled.div`
-    width : 300px;
-    margin-top: 20px;
+    width : 80%;
+    margin: 0 auto;
 `
 
 export const ProjectTitle = styled.span`
+    display: inline-block;
+    margin-top: 30px;
     font-weight: bold;
     font-size: 20px;
+
+    @media screen and (max-width : 600px){
+        font-size: 16px;
+    }
 `
 
 export const ProjectInfo = styled.div`
     display: -webkit-box;
-    width : 266px;
+    width : 90%;
     max-height: 112px;
     margin: 8px auto;
     font-size: 16px;
@@ -117,12 +143,16 @@ export const ProjectInfo = styled.div`
     white-space: normal;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+
+    @media screen and (max-width : 600px){
+        margin: 8px auto;
+        font-size: 12px;
+    }
 `
 
 export const ProjectDetailButton = styled.img`
     float: right;
     width: 20px;
-    margin-right: 20px;
-    cursor: pointer;
-    
+    margin-right: 16px;
+    cursor: pointer; 
 `

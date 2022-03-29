@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const ProjectBackground = styled.div`
-    display: ${(props)=> props.showProjectDetail ? 'block' : 'none'};
+    display: ${(props:any)=> props.showProjectDetail ? 'block' : 'none'};
     position: fixed;
     top: 0;
     right: 0;
@@ -47,7 +47,7 @@ export const StyledSlider = styled(Slider)`
 
     @media screen and (max-width : 800px){
         margin: 0 auto;
-        padding: 36px 80px;
+        padding: 36px 50px;
         width: 80%;  
         border : 20px;
         align-items: center;
@@ -59,7 +59,7 @@ export const StyledSlider = styled(Slider)`
     z-index: 1000;
 
     @media screen and (max-width : 800px){
-        left: 30px !important;
+        left: 20px !important;
     }
   }
   .slick-prev:before{
@@ -71,7 +71,7 @@ export const StyledSlider = styled(Slider)`
     z-index: 1000;
 
     @media screen and (max-width : 800px){
-        right: 30px !important;
+        right: 20px !important;
     }
   }
 

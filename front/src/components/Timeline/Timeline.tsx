@@ -34,8 +34,8 @@ export function Timeline() {
             <TimelineWrapper id="timeline">
                 <TimelineBackground showTimelineDetail={showTimelineDetail}/>
                 <CateName>Timeline</CateName>
+                {showTimelineDetail ? <DetailModal detailId={timelineKey}/> : <></>}
                 <TimelineWholeContentWrapper>
-                    {showTimelineDetail ? <DetailModal detailId={timelineKey}/> : <></>}
                     {TimelineContents.map((value, key)=>(
                         <TimelineContentWrapper>
                             <Period>{value.timelinePeriod}</Period>

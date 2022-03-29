@@ -4,7 +4,7 @@ import {Link} from 'react-scroll';
 export const More = styled.img`
     vertical-align: middle;
     width: 28px;
-    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
+    filter : ${(props:any)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 `
 
@@ -29,7 +29,7 @@ export const CloseButton = styled.img`
     position: absolute;
     right: 0;
     width: 16px;
-    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
+    filter : ${(props:any)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 `
 
@@ -86,11 +86,10 @@ export const SidebarModeImg = styled.img`
     display: inline-block;
     width: 24px;
     cursor: pointer;
-    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
+    filter : ${(props:any)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
 
     &:hover{
-        filter: contrast(200%) ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
-        /* filter : invert(100%);  */
+        filter: contrast(200%) ${(props:any)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     }
 `
 

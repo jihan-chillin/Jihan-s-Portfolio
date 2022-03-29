@@ -28,10 +28,6 @@ export function DetailModal({
     const {TimelineContents} = useSelector((state:any)=>state.timeline)
     const dispatch = useDispatch();
     
-    console.log(ProjectContent, "ProjectContent 뭐있니.")
-    console.log(detailId, "눌린 detailId");
-    console.log(ProjectContent[detailId], "이거 찐으로 궁금함");
-
     const closeModal = useCallback(()=>{
         dispatch({
             type : TOGGLE_PROJECT_DETAIL_REQUEST,

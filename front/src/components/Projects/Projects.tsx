@@ -1,6 +1,5 @@
-import React, {useCallback, useEffect} from 'react'
+import React, {useCallback} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-
 
 import { 
     ProjectBackground,
@@ -17,15 +16,13 @@ import {
     StyledSlider,
 } from './Projects.styles'
 
+import {
+    TOGGLE_PROJECT_DETAIL_REQUEST
+} from '../../../reducers/projectsReducer' 
 
-import {TOGGLE_PROJECT_DETAIL_REQUEST} from '../../../reducers/projectsReducer' 
-import { DetailModal } from '../Common/views/DetailModal'
-import { Slider } from '../Slider/SliderComponent'
+import { DetailModal } from '../Common/views/DetailModal';
 
 export function Projects() {
-    const {color} = useSelector((state:any)=>state.theme)
-    const dark = color.theme_1 == '#F2F2F2'
-
     const {
         ProjectContent, 
         showProjectDetail,
@@ -33,7 +30,6 @@ export function Projects() {
     } = useSelector((state:any)=> state.project);
     
     const dispatch = useDispatch();
-
     const onShowModal = useCallback((key)=>{
         dispatch({
             type : TOGGLE_PROJECT_DETAIL_REQUEST,
@@ -50,16 +46,6 @@ export function Projects() {
         speed: 500, // 넘어가는 속도는 몇으로 할 것인지
         slidesToShow: 1, 
         slidesToScroll: 1,
-        responsive : [{
-            breakpoint : 800,
-            settings : {
-                dots : false,
-                isFinite : true,
-                speed: 500, // 넘어가는 속도는 몇으로 할 것인지
-                slidesToShow: 1, 
-                slidesToScroll: 1,
-            }
-        }]
     }
 
     return (

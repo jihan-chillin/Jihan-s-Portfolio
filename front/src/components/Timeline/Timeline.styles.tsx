@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const TimelineBackground = styled.div`
-    display: ${(props)=> props.showTimelineDetail ? 'block' : 'none'};
+    display: ${(props:any)=> props.showTimelineDetail ? 'block' : 'none'};
     position: fixed;
     top: 0;
     right: 0;
@@ -12,6 +12,7 @@ export const TimelineBackground = styled.div`
 `
 
 export const TimelineWrapper = styled.div`
+    position : relative;
     padding-bottom: 20px;
     background-color:  ${(props)=>props.theme.theme_11};
 `
@@ -58,13 +59,13 @@ export const TimelineTitle = styled.div`
     width : 500px;
     height: 40px;
     font-size: 20px;
-    border : 3px solid ${(props)=>props.colorKey == 0 
+    border : 3px solid ${(props:any)=>props.colorKey == 0 
         ? (props)=>props.theme.theme_6 
-        : (props)=>props.colorKey == 1 
+        : (props:any)=>props.colorKey == 1 
         ? (props)=>props.theme.theme_7
-        : (props)=>props.colorKey == 2 
+        : (props:any)=>props.colorKey == 2 
         ? (props)=>props.theme.theme_8
-        : (props)=>props.colorKey == 3 
+        : (props:any)=>props.colorKey == 3 
         ? (props)=>props.theme.theme_9
         : (props)=>props.theme.theme_10};
     border-radius: 20px;

@@ -15,7 +15,7 @@ export const ModalWrapper = styled.div`
     @media screen and (max-width: 800px) {
         position: absolute;
         top : 5%;
-        left : ${(props)=>props.cate === 'ProjectDetail' ? '11' : '20'}%;
+        left : ${(props:any)=>props.cate === 'ProjectDetail' ? '11' : '20'}%;
         width: 280px;
         margin: 40px auto;
     }
@@ -31,7 +31,7 @@ export const ModalCloseButton = styled.img`
     top : 30px;
     right: 30px;
     width: 16px;
-    filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
+    filter : ${(props:any)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     cursor: pointer;
 `
 
@@ -60,11 +60,7 @@ export const ModalContentInfo = styled.div`
     margin-top: 8px;
     font-size: 14px;
     color : ${(props)=>props.theme.theme_14};
-
-    &:hover{
-        font-weight: bold;
-    }
-
+    
     @media screen and (max-width: 800px) {
         font-size: 12px;
     }

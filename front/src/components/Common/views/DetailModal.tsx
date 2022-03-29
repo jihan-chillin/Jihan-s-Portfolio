@@ -78,9 +78,17 @@ export function DetailModal({
                         <ModalContentInfo>
                             {TimelineContents[detailId].timelineInfo}
                         </ModalContentInfo>
-
-                        <ModalContentTitle>발표영상 링크</ModalContentTitle>
-                        <a href={TimelineContents[detailId].timelinelink}><ModalContentInfo>요ㅛㅇ</ModalContentInfo></a>
+                        {TimelineContents[detailId].linkTitle !== '' 
+                        ? (
+                        <>
+                            <ModalContentTitle>관련링크</ModalContentTitle>
+                            <a href={TimelineContents[detailId].timelinelink}><ModalContentInfo>{TimelineContents[detailId].linkTitle}</ModalContentInfo></a>
+                        </>)
+                        :(
+                            <></>
+                        )
+                        }
+                        
                     </ModalContentWrapper>
                 </ModalWrapper>
             )}

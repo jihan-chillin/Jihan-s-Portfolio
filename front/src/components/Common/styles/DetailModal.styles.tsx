@@ -61,6 +61,10 @@ export const ModalContentInfo = styled.div`
     font-size: 14px;
     color : ${(props)=>props.theme.theme_14};
 
+    &:hover{
+        font-weight: bold;
+    }
+
     @media screen and (max-width: 800px) {
         font-size: 12px;
     }

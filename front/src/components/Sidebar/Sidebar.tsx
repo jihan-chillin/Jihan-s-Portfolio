@@ -1,6 +1,5 @@
-import React, {useCallback, useEffect, useState} from 'react'
+import React, {useCallback, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { ButtonWrapper } from '../Common/styles/RoundBtn.styles';
 import { RoundButton } from '../Common/views/RoundBtn';
 
 import { 
@@ -85,7 +84,7 @@ export function Sidebar() {
                         <SidebarModeImg dark={dark} onClick={()=>remoteTheme('light')} src="/light.png"/> 
                         <SidebarModeImg dark={dark} onClick={()=>remoteTheme('dark')} src="/dark.png"/> 
                     </SidebarModeItemWrapper> 
-                    {me 
+                    {!me 
                         ? (
                             <>
                                 <SidebarModeItemWrapper>

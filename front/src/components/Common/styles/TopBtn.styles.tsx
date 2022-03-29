@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const TopButtonWrapper = styled.div`
     position: fixed;
-    bottom : 3rem;
-    right : 3rem;
+    bottom : 1.5rem;
+    right : 1.5rem;
     z-index: 1;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     background-color: ${(props)=>props.theme.theme_1};
     border-radius: 50%;
     cursor: pointer;
@@ -21,8 +21,8 @@ export const TopButtonWrapper = styled.div`
 
 export const TopTriangle = styled.img`
     display: block;
-    margin: 10px auto;
-    width: 28px;
+    margin: 8px auto;
+    width: 24px;
     filter : ${(props)=>props.dark ? 'invert(100%)' : 'invert(0%)'};
     
     @media screen and (max-width: 800px) {

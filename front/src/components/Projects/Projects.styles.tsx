@@ -1,4 +1,4 @@
-import styled,{ keyframes, css } from 'styled-components'
+import styled from 'styled-components';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -103,7 +103,6 @@ export const SliderContainer = styled.div`
 export const SliderImgContainer = styled.div`
     width: 100%;
     height : 240px;
-    background-color: #AAAAAA;
     border-radius: 20px 20px 0 0 ;
 
     @media screen and (max-width : 600px){
@@ -115,7 +114,10 @@ export const SliderImgContainer = styled.div`
 export const SliderImg = styled.img`
     display: inline-block;
     margin: 0 auto;
+    width: 100%;
     height: 100%;
+    background-size: contain;
+    border-radius: 20px 20px 0 0;
 `
 export const SliderContent = styled.div`
     width : 80%;

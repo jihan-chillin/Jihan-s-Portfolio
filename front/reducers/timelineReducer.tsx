@@ -10,19 +10,19 @@ export const initialState = {
     },{
         timelinePeriod : '2020.08.15',
         timelineTitle : 'AI JAM KOREA 동상',
-        timelineInfo : 'AI JAM KOREA 활동입니당',
-        timelinelink : 'https://blog.naver.com/kimjihan77',
+        timelineInfo : '영화 포스터를 크롤링하고 Gradient Boosting 분류모델을 이용해 나라별, 장르별로 65% 이상의 유의미한 색감 차이를 발견했습니다. 이러한 차이를 이용해서 다양한 기준별로 객관적인 색감 지표를 제시하는 아이디어를 선보였고, 동상이라는 쾌거를 이뤄냈습니다.공모전 때 저의 역할은 기획, 크롤링 그리고 데이터 전처리였습니다. 하지만, 추상적인 아이디어와 데이터를 코딩으로 구체화 시키고, 유의미한 결과를 만들어 내는 과정을 통해서 "개발"이라는 분야에 대해 관심을 갖게 되었습니다.',
+        timelinelink : 'https://www.youtube.com/watch?v=4iOwYHKXijw&t=300s',
         linkTitle : 'AI JAM KOREA 아이디어 발표영상',
     },{
         timelinePeriod : '2020.08.24',
         timelineTitle : '성신여자대학교 졸업',
-        timelineInfo : '졸업했습니당.',
-        timelinelink : 'https://blog.naver.com/kimjihan77',
+        timelineInfo : '성신여자대학교 청정융합과학과(주전공) / 통계학과(부전공)로 졸업',
+        timelinelink : '',
         linkTitle : '',
     },{
         timelinePeriod : '2021.01 ~ 2021.08',
         timelineTitle : '웹개발 국비교육 수강',
-        timelineInfo : '웹개발 국비교육 수강했습니당',
+        timelineInfo : '7개월간 Java, DB, Front-end, Back-end, Framework를 배우고 두 차례의 웹 프로젝트를 진행했습니다. 프로젝트를 진행하는 과정에서 화면을 구성하고, 사용자의 워크플로우에 맞는 기능을 구현하는 부분이 가장 흥미롭게 느껴져 프론트엔드 개발자로 방향을 정하게 됐습니다.',
         timelinelink : '',
         linkTitle : '',
     },{

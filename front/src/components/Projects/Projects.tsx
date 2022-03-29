@@ -6,14 +6,14 @@ import {
     ProjectsWrapper, 
     CateName,
     SliderWholeContainer,
-    ProjectInfo, 
-    ProjectTitle,
-    SliderContainer,
-    SliderContent,
-    SliderImgContainer,
-    ProjectDetailButton,
-    SliderImg,
     StyledSlider,
+    SliderContainer,
+    SliderImgContainer,
+    SliderImg,
+    SliderContent,
+    ProjectTitle,
+    ProjectInfo, 
+    ProjectDetailButton,
 } from './Projects.styles'
 
 import {
@@ -26,7 +26,7 @@ export function Projects() {
     const {
         ProjectContent, 
         showProjectDetail,
-        projectKey
+        projectKey,
     } = useSelector((state:any)=> state.project);
     
     const dispatch = useDispatch();
@@ -59,7 +59,7 @@ export function Projects() {
                                 {ProjectContent.map((value,key)=>(
                                     <SliderContainer>
                                         <SliderImgContainer className='slick-slide'>
-                                            <SliderImg src='./graphql.png'/>
+                                            <SliderImg src={value.ProjectThumbnail}/>
                                         </SliderImgContainer>
                                         <SliderContent>
                                             <ProjectTitle>{value.ProjectTitle}</ProjectTitle>

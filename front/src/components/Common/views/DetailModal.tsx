@@ -62,6 +62,12 @@ export function DetailModal({
 
                         <ModalContentTitle>나의 기여도</ModalContentTitle>
                         <ModalContentInfo>{ProjectContent[detailId].contribution}</ModalContentInfo>
+                    
+                        {ProjectContent[detailId].gitAddress !==''
+                        ? <a href={ProjectContent[detailId].gitAddress}><ModalContentTitle>깃 레퍼지토리 ☜</ModalContentTitle></a>
+                        : <></>
+                        }
+                        
                     </ModalContentWrapper>
                 </ModalWrapper>
             ) : (

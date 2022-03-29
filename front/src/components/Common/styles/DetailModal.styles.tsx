@@ -26,8 +26,8 @@ export const ModalWrapper = styled.div`
 
 export const ModalCloseButtonWrapper = styled.div`
     position: relative;
-    margin-bottom: 20px;
 `
+
 export const ModalCloseButton = styled.img`
     display: block;
     position: absolute;

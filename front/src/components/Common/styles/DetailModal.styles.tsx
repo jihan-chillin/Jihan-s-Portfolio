@@ -1,21 +1,24 @@
 import styled from "styled-components";
 
 export const ModalWrapper = styled.div`
-    position: absolute;
-    top : 0%;
-    left : 25%;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-96%, -50%);
     display: inline-block;
-    z-index : 1005;
     width : 440px;
-    margin: 60px auto;
+    z-index : 1005;
+    margin-left:200px;
     background-color: ${(props)=>props.theme.theme_11};
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (max-width: 800px) {
         position: absolute;
-        top : 5%;
-        left : ${(props:any)=>props.cate === 'ProjectDetail' ? '11' : '20'}%;
+        top : 50%;
+        /* left : ${(props:any)=>props.cate === 'ProjectDetail' ? '50' : '50'}%; */
+        left : 50%;
+        transform: translate(-50%, -50%);
         width: 280px;
         margin: 40px auto;
     }

@@ -7,6 +7,7 @@ export const TimelineBackground = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 10;
     background-color: #4b4b4b;
     opacity: 0.6;
 `

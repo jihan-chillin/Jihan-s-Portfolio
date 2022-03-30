@@ -5,8 +5,8 @@ export const initialState = {
         ProjectId : 0,
         ProjectThumbnail : './portfolio.png',
         ProjectTitle : "사계절모드 포트폴리오",
-        ProjectInfo : "로그인 시 사계절 모드를 이용해볼 수 있는 포트폴리오 사이트입니다. 다크모드와 라이트모드 이외에 차별화된 모드를 경험해볼 수 있는 사이트를 만들어보고자 구현하게 됐습니다.",
-        period : "2020.07.07 ~ 2021.07.07",
+        ProjectInfo : "로그인 시 사계절 모드를 경험해 보실 수 있는 포트폴리오 사이트입니다. 이전엔 props와 Context API로만 상태 관리를 하다가 redux를 공부하고 활용해볼 겸 만들어보게 되었는데, 중앙상태관리의 존재가 개발효율을 굉장히 높여준다는 것을 몸소 느낄 수 있었습니다.",
+        period : "2022.03",
         techStack : "React(Next.js), Redux, GraphQL, MySQL, ApolloServer",
         contribution : "개인프로젝트",
         gitAddress : 'https://github.com/jihan-chillin/poom'

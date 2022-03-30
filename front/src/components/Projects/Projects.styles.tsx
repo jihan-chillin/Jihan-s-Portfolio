@@ -40,16 +40,24 @@ export const SliderWholeContainer = styled.div`
 
 // react-slick 커스텀 
 export const StyledSlider = styled(Slider)`
-    margin: 0 auto;
-    padding: 80px 200px;
+    margin: 20px auto;
+    padding: 10px 160px;
     width: 800px;
     border : 20px;
     align-items: center;
 
     @media screen and (max-width : 800px){
         margin: 0 auto;
+        padding: 36px 80px;
+        width: 76%;  
+        border : 20px;
+        align-items: center;
+    }
+
+    @media screen and (max-width : 576px){
+        margin: 0 auto;
         padding: 36px 50px;
-        width: 80%;  
+        width: 76%;  
         border : 20px;
         align-items: center;
     }
@@ -61,8 +69,9 @@ export const StyledSlider = styled(Slider)`
 
     @media screen and (max-width : 800px){
         left: 20px !important;
+     }
     }
-  }
+
   .slick-prev:before{
     color : ${(props)=>props.theme.theme_1};
   }
@@ -84,78 +93,57 @@ export const StyledSlider = styled(Slider)`
 export const SliderContainer = styled.div`
     display: inline-block;
     width : 200px;
-    height : 480px;
     margin : 0px auto;
-    background-color: #F2F2F2;
+    padding : 10px 0;
     border-radius: 20px;
+    background-color: #F2F2F2;
     overflow : visible !important;
-
-    @media screen and (max-width : 800px){
-        width : 180px;
-        height : 480px; 
-    }
-
-    @media screen and (max-width : 600px){
-        height : 380px;
-    }
 `
 
 export const SliderImgContainer = styled.div`
     width: 100%;
-    height : 240px;
     border-radius: 20px 20px 0 0 ;
-
-    @media screen and (max-width : 600px){
-        width: 100%;
-        height : 172px;
-    }
 `
 
 export const SliderImg = styled.img`
     display: inline-block;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    border-radius: 20px 20px 0 0;
+    width: 98%;
 `
 export const SliderContent = styled.div`
     width : 80%;
     margin: 0 auto;
+    padding : 10px 0 ;
 `
-
 export const ProjectTitle = styled.span`
     display: inline-block;
     margin-top: 30px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 
-    @media screen and (max-width : 600px){
-        font-size: 16px;
+    @media screen and (max-width : 576px){
+        font-size: 14px;
     }
 `
 
 export const ProjectInfo = styled.div`
-    display: -webkit-box;
     width : 90%;
-    max-height: 112px;
-    margin: 8px auto;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    margin: 20px auto;
+    font-size: 14px;
 
-    @media screen and (max-width : 600px){
-        margin: 8px auto;
+    @media screen and (max-width : 576px){
         font-size: 12px;
     }
+
 `
 
 export const ProjectDetailButton = styled.img`
     float: right;
     width: 20px;
-    margin-right: 16px;
+    margin-right: 12px;
     cursor: pointer; 
+
+    @media screen and (max-width : 576px){
+        width : 16px;
+    }
 `

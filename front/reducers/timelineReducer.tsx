@@ -27,8 +27,8 @@ export const initialState = {
         linkTitle : '',
     },{
         timelinePeriod : '2021.11.01 ~ 2022.03.04',
-        timelineTitle : '바운스 코드 재직',
-        timelineInfo : '바운스 코드 다녔습니다',
+        timelineTitle : '(주)바운스코드',
+        timelineInfo : '현재는 "미스터로그인"이라는 통합로그인 시스템을 개발하는 회사에서 4개월 간 일을 했습니다. 재직 당시 DTx(디지털 치료제)앱과 어드민 페이지를 개발했으며, 스마트 팩토리 관련 사업에서 데이터 전처리를 했습니다.',
         timelinelink : '',
         linkTitle : '',
     }],

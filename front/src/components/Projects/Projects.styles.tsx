@@ -130,7 +130,7 @@ export const ProjectInfo = styled.div`
     width : 90%;
     margin: 20px auto;
     font-size: 14px;
-    color : ${(props)=>props.theme.theme_14};
+    color : #5b5a5a;
 
     @media screen and (max-width : 576px){
         font-size: 12px;

@@ -1,6 +1,5 @@
 # 김지한 포트폴리오
-###### 여기에 간단한 포트폴리오 설명
-![image](/front/public/portfolio.png)
+###### 포트폴리오 사이트입니다!
 ## 목차
 - [기술 스택](#기술-스택)
 - [프로젝트 기능](#프로젝트-기능)
@@ -53,11 +52,11 @@
 #### Back
 -----
 ### 미리 보기 👁️‍🗨️
-<img src="https://user-images.githubusercontent.com/69563429/160766066-c1af01f1-3c8b-4b71-bb17-bd33a302307e.gif" width=50%/>
-<img src="https://user-images.githubusercontent.com/69563429/160766173-6aa5b0a4-7d59-4fd8-9a76-8de073f88f1d.gif" width=50%/>
-<img src="https://user-images.githubusercontent.com/69563429/160766279-05c4cd31-df07-449d-8bec-6862fcc49b44.gif" width=50%/>
-<img src="https://user-images.githubusercontent.com/69563429/160766338-4947c3c3-bb9e-4a67-a248-0fd19eb7760a.gif" width=50%/>
------
+<img src="https://user-images.githubusercontent.com/69563429/160766066-c1af01f1-3c8b-4b71-bb17-bd33a302307e.gif" width=40%/>
+<img src="https://user-images.githubusercontent.com/69563429/160766173-6aa5b0a4-7d59-4fd8-9a76-8de073f88f1d.gif" width=40%/>
+<img src="https://user-images.githubusercontent.com/69563429/160766279-05c4cd31-df07-449d-8bec-6862fcc49b44.gif" width=40%/>
+<img src="https://user-images.githubusercontent.com/69563429/160766338-4947c3c3-bb9e-4a67-a248-0fd19eb7760a.gif" width=40%/>
+###
 ### 추후 업데이트 계획 💡
 ###### - admin 계정 및 페이지 생성하여 컨텐츠 수정
 ###### - 블로그 사이트 

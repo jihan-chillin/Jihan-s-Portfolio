@@ -46,6 +46,7 @@
 ## 프로젝트 구조 🏗️
 ### Front
 <img src="https://user-images.githubusercontent.com/69563429/160769366-854f33cd-c222-4f27-a0d7-3b1b68040170.png" width=70%/>
+
 -----
 
 ## 미리 보기 👁️‍🗨️
@@ -68,6 +69,7 @@
 <pre>
   <code>yarn dev</code>
 </pre>
+
 ---------------
 ## 추후 업데이트 계획 💡
 ##### - GraphQL&MySQL로 컨텐츠 부분 DB화

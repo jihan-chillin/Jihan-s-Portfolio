@@ -53,22 +53,23 @@ export function Sidebar() {
                 <CloseButtonWrapper>
                     <CloseButton src="./closebtn.png" dark={dark} onClick={ToggleSidebar}/>
                 </CloseButtonWrapper>
-                {me 
+                {!me 
                     ? (
                         <SidebarContentWrapper>
-                        <InfoText><span style={{fontWeight : 'bold', color : color.theme_3}}>{me.nickname}</span> 님</InfoText>
+                        <InfoText><span style={{fontWeight : 'bold', color : color.theme_3}}>OOO</span> 님</InfoText>
                         <InfoText>안녕하세요!</InfoText>
-                        <RoundButton/>
+                        {/* <RoundButton/> */}
                         </SidebarContentWrapper>
                     )
                     
                     : (
-                        <SidebarContentWrapper>
-                        <InfoText>로그인 하여</InfoText>
-                        <InfoText><span style={{fontWeight : 'bold'}}>사계절 모드</span>를</InfoText>
-                        <InfoText>경험해보세요!</InfoText>
-                        <RoundButton/>
-                        </SidebarContentWrapper>
+                        // <SidebarContentWrapper>
+                        // <InfoText>로그인 하여</InfoText>
+                        // <InfoText><span style={{fontWeight : 'bold'}}>사계절 모드</span>를</InfoText>
+                        // <InfoText>경험해보세요!</InfoText>
+                        // <RoundButton/>
+                        // </SidebarContentWrapper>
+                        <></>
                     )}
                 <SidebarMenuWrapper>
                     <SidebarMenuTitle>menu</SidebarMenuTitle>

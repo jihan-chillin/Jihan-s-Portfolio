@@ -5,11 +5,11 @@ export const initialState = {
     SkillsInfos : [{
         skillTitle : 'html, css, js',
         skillImagePath : './html.png',
-        skillPercentage : 80,
+        skillPercentage : 70,
     },{
         skillTitle : 'React(Next.js)',
         skillImagePath : './react.png',
-        skillPercentage : 60,
+        skillPercentage : 50,
     },{
         skillTitle : 'Redux',
         skillImagePath : './redux.png',
@@ -21,11 +21,11 @@ export const initialState = {
     },{
         skillTitle : 'GraphQL',
         skillImagePath : './graphql.png',
-        skillPercentage : 60,
+        skillPercentage : 30,
     },{
         skillTitle : 'github(상태관리)',
         skillImagePath : './github.png',
-        skillPercentage : 60,
+        skillPercentage : 40,
     }]
 }
 

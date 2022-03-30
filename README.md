@@ -48,7 +48,7 @@
 -----
 ### 프로젝트 구조 🏗️
 ### Front
-<
+<img src="https://user-images.githubusercontent.com/69563429/160769366-854f33cd-c222-4f27-a0d7-3b1b68040170.png" width=70%/>
 #### Back
 -----
 ### 미리 보기 👁️‍🗨️

@@ -9,7 +9,7 @@ export const initialState = {
         period : "2022.03",
         techStack : "Figma, React(Next.js), typescript, Redux, GraphQL, MySQL, ApolloServer",
         contribution : "개인프로젝트",
-        gitAddress : 'https://github.com/jihan-chillin/poom'
+        gitAddress : 'https://github.com/jihan-chillin/Jihan-s-Portfolio'
     },{
         ProjectId : 1,
         ProjectThumbnail : './Dtx.png',

@@ -72,8 +72,8 @@
 
 ---------------
 ## 추후 업데이트 계획 💡
-##### - GraphQL&MySQL로 컨텐츠 부분 DB화
-##### - 서버연결 
-##### - 카카오 로그인 시 사계절모드 활성화 / 로그인 안했을 경우 사계절모드 비활성화
-##### - admin 계정 및 페이지 생성하여 컨텐츠 수정
-##### - 블로그 사이트 
+##### :white_check_mark: GraphQL&MySQL로 컨텐츠 부분 DB화
+##### :black_square_button: 서버연결 
+##### :black_square_button: 카카오 로그인 시 사계절모드 활성화 / 로그인 안했을 경우 사계절모드 비활성화
+##### :black_square_button: admin 계정 및 페이지 생성하여 컨텐츠 수정
+##### :black_square_button: 블로그 사이트 

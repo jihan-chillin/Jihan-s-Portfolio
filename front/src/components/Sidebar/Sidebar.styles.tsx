@@ -16,8 +16,8 @@ export const SidebarNav = styled.div<{showSidebar : boolean}>`
     width: 260px;
     height: 100vh;
     z-index: 1001;
-    border-left : 1px solid ${(props)=>props.theme.theme_14};
-    background-color: ${(props)=>props.theme.theme_11};
+    border-left : 1px solid ${(props)=>props.theme.theme_4};
+    background-color: ${(props)=>props.theme.theme_14};
     overflow: scroll ;
 `
 export const CloseButtonWrapper = styled.div`
@@ -37,12 +37,12 @@ export const SidebarContentWrapper = styled.div`
     text-align: center;
     padding : 18px 0;
     max-height: 260px;
-    border-bottom: 3px solid ${(props)=>props.theme.theme_14};
+    border-bottom: 3px solid ${(props)=>props.theme.theme_15};
 `
 export const InfoText = styled.span`
     display: block;
     margin-top: 3px;
-    color : ${(props)=>props.theme.theme_13};
+    color : ${(props)=>props.theme.theme_4};
 `
 
 export const SidebarMenuWrapper = styled.div`
@@ -52,7 +52,7 @@ export const SidebarMenuWrapper = styled.div`
         display: block;
         text-align: center;
         padding : 18px 0;
-        border-bottom: 3px solid ${(props)=>props.theme.theme_14};
+        border-bottom: 3px solid ${(props)=>props.theme.theme_15};
     }
 `
 
@@ -66,7 +66,7 @@ export const SidebarMenuItem = styled(Link)`
     line-height: 32px;
     margin : 14px 0;
     font-size: 16px;
-    color : ${(props)=>props.theme.theme_13};
+    color : ${(props)=>props.theme.theme_4};
     cursor: pointer;
 
     &:hover{
@@ -95,7 +95,7 @@ export const SidebarModeImg = styled.img`
 export const SidebarModeText = styled.span`
     display: inline-block;
     font-size: 16px;
-    color : ${(props)=>props.theme.theme_13};
+    color : ${(props)=>props.theme.theme_4};
     cursor: pointer;
 
     &:hover{

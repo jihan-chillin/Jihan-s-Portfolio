@@ -15,7 +15,7 @@ export const TimelineBackground = styled.div`
 export const TimelineWrapper = styled.div`
     position : relative;
     padding-bottom: 20px;
-    background-color:  ${(props)=>props.theme.theme_11};
+    background-color:  ${(props)=>props.theme.theme_13};
 `
 
 export const CateName = styled.span`
@@ -56,27 +56,28 @@ export const Period = styled.span`
 `
 
 export const TimelineTitle = styled.div`
+    margin: 0 auto;
     padding : 0 12px;
     width : 500px;
-    height: 40px;
+    height: 44px;
     font-size: 20px;
     border : 3px solid ${(props:any)=>props.colorKey == 0 
-        ? (props)=>props.theme.theme_6 
+        ? (props)=>props.theme.theme_8 
         : (props:any)=>props.colorKey == 1 
-        ? (props)=>props.theme.theme_7
-        : (props:any)=>props.colorKey == 2 
-        ? (props)=>props.theme.theme_8
-        : (props:any)=>props.colorKey == 3 
         ? (props)=>props.theme.theme_9
-        : (props)=>props.theme.theme_10};
+        : (props:any)=>props.colorKey == 2 
+        ? (props)=>props.theme.theme_10
+        : (props:any)=>props.colorKey == 3 
+        ? (props)=>props.theme.theme_11
+        : (props)=>props.theme.theme_12};
     border-radius: 20px;
-    background-color: ${(props)=>props.theme.theme_12};
+    background-color: white;                       
     cursor: pointer;
-    color : ${(props)=>props.theme.theme_13};
+    color :#4b4b4b;
     
     &:hover{
         width: 520px;
-        height : 44px;
+        height : 48px;
         font-size: 22px;
         font-weight: bold;
         border-radius: 30px;

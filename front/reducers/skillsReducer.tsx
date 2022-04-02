@@ -1,31 +1,32 @@
 import produce from "immer";
 
 export const initialState = {
-    id : 1, 
-    SkillsInfos : [{
-        skillTitle : 'html, css, js',
-        skillImagePath : './html.png',
-        skillPercentage : 70,
+    BackFrontend : [{
+        skillTitle : 'Backend',
+        SkillIcon : [
+            './backend1.png',
+            './backend2.png',
+            './backend3.png',
+        ]
     },{
-        skillTitle : 'React(Next.js)',
-        skillImagePath : './react.png',
-        skillPercentage : 50,
+        skillTitle : 'Frontend',
+        SkillIcon : [
+            './front1.png',
+            './front2.png',
+            './front3.png',
+            './front4.png',
+        ]
+    }],
+    Etcetera : [{
+        skillTitle : 'Development',
+        SkillIcon : [
+            './development.png',
+        ]
     },{
-        skillTitle : 'Redux',
-        skillImagePath : './redux.png',
-        skillPercentage : 40,
-    },{
-        skillTitle : 'Typescript',
-        skillImagePath : './typescript.png',
-        skillPercentage : 60,
-    },{
-        skillTitle : 'GraphQL',
-        skillImagePath : './graphql.png',
-        skillPercentage : 30,
-    },{
-        skillTitle : 'github(상태관리)',
-        skillImagePath : './github.png',
-        skillPercentage : 40,
+        skillTitle : 'Version Control ',
+        SkillIcon : [
+            './versionControl.png',
+        ]
     }]
 }
 

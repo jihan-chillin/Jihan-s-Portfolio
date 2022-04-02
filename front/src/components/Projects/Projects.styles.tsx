@@ -18,7 +18,7 @@ export const ProjectBackground = styled.div`
 export const ProjectsWrapper = styled.div`
     position: relative;
     margin: 0 auto;
-    background-color: ${(props)=>props.theme.theme_5};
+    background-color: ${(props)=>props.theme.theme_7};
 `
 
 export const CateName = styled.span`

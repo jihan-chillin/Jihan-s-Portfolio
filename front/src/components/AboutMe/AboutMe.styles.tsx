@@ -58,7 +58,7 @@ export const Profile = styled.img`
 export const AboutContent = styled.div`
     margin-top: 60px;
     padding : 30px 0 30px 64px;
-    border-left: 1px solid ${(props:any)=>props.dark ? '#AAAAAA' : '#4b4b4b'};
+    border-left: 1px solid ${(props)=>props.theme.theme_4};
     width : 380px;
 
     @media screen and (max-width: 800px) {
@@ -70,7 +70,7 @@ export const AboutContent = styled.div`
 
 export const Moto = styled.div`
     font-size: 22px;
-    color : ${(props:any)=>props.dark ? '#f2f2f2' : '#4b4b4b'};
+    color : ${(props)=>props.theme.theme_4};
 
     @media screen and (max-width: 800px) {
         font-size: 18px;
@@ -84,7 +84,7 @@ export const MotoEmph = styled.span`
 export const Introduction = styled.div`
     margin-top: 24px;
     font-size: 18px;
-    color :  ${(props:any)=>props.dark ? '#f2f2f2' : '#4b4b4b'};
+    color : ${(props)=>props.theme.theme_4};
 
     @media screen and (max-width: 800px) {
         font-size: 14px;

@@ -4,36 +4,36 @@ import {
     AboutContentWrapper,
     AboutWrapper, 
     CateName, 
-    Moto, 
-    Name, 
     Profile,
     ProfileContainer,
+    Moto,
+    MotoEmph,
+    Introduction
 } from './AboutMe.styles'
 
-import { ImageTextInput } from '../Common/views/ImageTextInfo'
 import { useSelector } from 'react-redux'
 
 export function AboutMe () {
     const {
-        moto,
         profile,
-        InfoAboutMe
     } = useSelector((state:any)=>state.about);
 
+    const {color} = useSelector((state:any)=>state.theme)
+    const dark = color.theme_1 == '#F2F2F2' 
 
     return(
        <AboutWrapper id ="about">
             <CateName>About Me</CateName>
-            <Moto>{moto}</Moto>
             <AboutContentWrapper>
                 <ProfileContainer>
                     <Profile src={profile}/>
                 </ProfileContainer>
                 <AboutContent>
-                    <Name>김지한 (jihan kim)</Name>
-                    {InfoAboutMe.map((value)=>(
-                        <ImageTextInput page={value.goLink} imagePath={value.icon} info={value.infoText}/> 
-                    ))}
+                    <Moto dark={dark}>꾸준한 성장을 목표로 하는</Moto>
+                    <Moto dark={dark}>프론트엔드 개발자 <MotoEmph>김지한</MotoEmph>입니다.</Moto>
+                    <Introduction dark={dark}>
+                    블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라블라블ㄹ라브라
+                    </Introduction>
                 </AboutContent>
             </AboutContentWrapper>
        </AboutWrapper>

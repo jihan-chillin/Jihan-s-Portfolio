@@ -52,7 +52,6 @@ export const SidebarMenuWrapper = styled.div`
         display: block;
         text-align: center;
         padding : 18px 0;
-        max-height: 260px;
         border-bottom: 3px solid ${(props)=>props.theme.theme_14};
     }
 `

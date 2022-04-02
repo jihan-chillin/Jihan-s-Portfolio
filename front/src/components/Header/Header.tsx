@@ -22,6 +22,7 @@ export function Header (){
                     <MenuItem to="skill" spy={true} smooth={true}>Skills</MenuItem>
                     <MenuItem to="project" spy={true} smooth={true}>Projects</MenuItem>
                     <MenuItem to="timeline" spy={true} smooth={true}>Timeline</MenuItem>
+                    <MenuItem to="contact" spy={true} smooth={true}>Contact</MenuItem>
                     <Sidebar/>
                </MenuWrapper> 
         </HeaderWrapper>

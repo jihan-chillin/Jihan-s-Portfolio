@@ -1,7 +1,34 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-    background-color: ${(props)=>props.theme.theme_5};
+    background-color: ${(props)=>props.theme.theme_5}; 
+`
+
+export const CateName = styled.span`
+    display: inline-block;
+    margin-top: 76px;
+    font-size: 20px;
+    color: ${(props)=>props.theme.theme_2};
+    opacity: 0.5;
+
+    @media screen and (max-width : 800px){
+        margin-top: 30px;
+    }
+`
+
+export const AboutContentWrapper = styled.div`
+    display: flex;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @media screen and (max-width: 800px) {
+        display: block;
+        padding : 16px 0 !important;
+    }
 `
 
 export const ProfileContainer = styled.div`
@@ -19,45 +46,6 @@ export const ProfileContainer = styled.div`
     }
 `
 
-export const CateName = styled.span`
-    display: inline-block;
-    margin-top: 76px;
-    font-size: 20px;
-    color: ${(props)=>props.theme.theme_2};
-    opacity: 0.5;
-
-    @media screen and (max-width : 800px){
-        margin-top: 24px;
-    }
-`
-
-export const Moto = styled.span`
-    display: block;
-    margin: 16px 0 100px 0;
-    font-size: 40px;
-    font-weight: bold;
-    color : ${(props)=>props.theme.theme_4};
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.);
-
-    @media screen and (max-width: 800px) {
-        display: none;
-    }
-`
-
-export const AboutContentWrapper = styled.div`
-    display: flex;
-    max-width: 780px;
-    margin: 0 auto;
-    padding-bottom: 160px;
-    align-items: center;
-    justify-content: space-between;
-
-    @media screen and (max-width: 800px) {
-        display: block;
-        padding : 16px 0 !important;
-    }
-`
-
 export const Profile = styled.img`
     vertical-align: middle;
     width: 296px;
@@ -68,23 +56,37 @@ export const Profile = styled.img`
 `
 
 export const AboutContent = styled.div`
-    padding : 30px 0;
-    max-width: 360px;
+    margin-top: 60px;
+    padding : 30px 0 30px 64px;
+    border-left: 1px solid #4b4b4b;
+    width : 380px;
 
     @media screen and (max-width: 800px) {
+        border : none;
         margin: 0 auto;
-        align-items : center;
+        padding : 30px 0;
     }
 `
 
-export const Name = styled.span`
-    display: flex;
-    font-size: 32px;
-    font-weight: bold;
-    color: ${(props)=>props.theme.theme_1};
+export const Moto = styled.div`
+    font-size: 22px;
+    color : ${(props:any)=>props.dark ? '#f2f2f2' : '#4b4b4b'};
 
     @media screen and (max-width: 800px) {
-        display: inline-block;
-        font-size : 24px
+        font-size: 18px;
+    }
+`
+
+export const MotoEmph = styled.span`
+    font-weight: bold;
+    color : ${(props)=>props.theme.theme_1};
+`
+export const Introduction = styled.div`
+    margin-top: 24px;
+    font-size: 18px;
+    color :  ${(props:any)=>props.dark ? '#f2f2f2' : '#4b4b4b'};
+
+    @media screen and (max-width: 800px) {
+        font-size: 14px;
     }
 `

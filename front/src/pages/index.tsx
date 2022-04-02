@@ -4,10 +4,11 @@ import Head from 'next/head';
 import { Header } from "../components/Header/Header";
 import { MainContainer} from "../styles/main.style";
 import { AboutMe } from "../components/AboutMe/AboutMe";
+import { TopBtn } from "../components/Common/views/TopBtn";
 import { Skills } from "../components/Skills/Skills";
 import { Projects } from "../components/Projects/Projects";
 import { Timeline } from "../components/Timeline/Timeline";
-import { TopBtn } from "../components/Common/views/TopBtn";
+import { Contact } from "../components/Contact/contact";
 
 function MainPage(){
     return (
@@ -25,6 +26,7 @@ function MainPage(){
                 <Skills/>
                 <Projects/>
                 <Timeline/>
+                <Contact/>
             </MainContainer>
         </>
     )

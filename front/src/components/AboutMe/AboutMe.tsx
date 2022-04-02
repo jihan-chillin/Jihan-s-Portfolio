@@ -28,7 +28,7 @@ export function AboutMe () {
                 <ProfileContainer>
                     <Profile src={profile}/>
                 </ProfileContainer>
-                <AboutContent>
+                <AboutContent dark={dark}>
                     <Moto dark={dark}>꾸준한 성장을 목표로 하는</Moto>
                     <Moto dark={dark}>프론트엔드 개발자 <MotoEmph>김지한</MotoEmph>입니다.</Moto>
                     <Introduction dark={dark}>

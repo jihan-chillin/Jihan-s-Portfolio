@@ -58,7 +58,7 @@ export const Profile = styled.img`
 export const AboutContent = styled.div`
     margin-top: 60px;
     padding : 30px 0 30px 64px;
-    border-left: 1px solid #4b4b4b;
+    border-left: 1px solid ${(props:any)=>props.dark ? '#AAAAAA' : '#4b4b4b'};
     width : 380px;
 
     @media screen and (max-width: 800px) {

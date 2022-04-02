@@ -14,7 +14,7 @@ import {
 import { TOGGLE_TIMELINE_DETAIL_REQUEST } from '../../../reducers/timelineReducer';
 
 export function Timeline() {
-    const {TimelineContents, showTimelineDetail, timelineKey} = useSelector((state:any)=> state.timeline);
+    const {TimelineContents, showTimelineDetail, timelineKey, modal} = useSelector((state:any)=> state.timeline);
 
     const dispatch = useDispatch();
     
@@ -26,7 +26,7 @@ export function Timeline() {
                 timelineKey : key
             }
         })
-    },[])
+    },[]) 
     
     
     return (
@@ -38,7 +38,6 @@ export function Timeline() {
                 <TimelineWholeContentWrapper>
                     {TimelineContents.map((value, key)=>(
                         <TimelineContentWrapper>
-                            {/* <Period>{value.timelinePeriod}</Period> */}
                             <TimelineTitle colorKey={key} onClick={()=>showTimelineModal(key)}>{value.timelineTitle}</TimelineTitle>
                         </TimelineContentWrapper>
                     ))}

@@ -19,7 +19,7 @@ export interface IDetailModal{
 
 export function DetailModal({
     cate,
-    detailId,
+    detailId
 }:IDetailModal){
     const {color} = useSelector((state:any)=>state.theme)
     const dark = color.theme_1 == '#F2F2F2' 
@@ -50,7 +50,7 @@ export function DetailModal({
                         <ModalCloseButton dark={dark} src='./closebtn.png'/>
                     </ModalCloseButtonWrapper>
                         <ModalContentWrapper>
-                        <ModalContentTitle>기간</ModalContentTitle>
+                        <ModalContentTitle>작업 기간</ModalContentTitle>
                         <ModalContentInfo>
                         {ProjectContent[detailId].period}
                         </ModalContentInfo>
@@ -63,6 +63,8 @@ export function DetailModal({
                         <ModalContentTitle>나의 기여도</ModalContentTitle>
                         <ModalContentInfo>{ProjectContent[detailId].contribution}</ModalContentInfo>
                     
+                        <ModalContentTitle>느낀점</ModalContentTitle>
+                        <ModalContentInfo>{ProjectContent[detailId].takeAway}</ModalContentInfo>
                         {ProjectContent[detailId].gitAddress !==''
                         ? <a href={ProjectContent[detailId].gitAddress}><ModalContentTitle>깃 레퍼지토리 ☜</ModalContentTitle></a>
                         : <></>
@@ -76,6 +78,11 @@ export function DetailModal({
                         <ModalCloseButton dark={dark} src='./closebtn.png'/>
                     </ModalCloseButtonWrapper>
                     <ModalContentWrapper>
+                        <ModalContentTitle>기간</ModalContentTitle>
+                        <ModalContentInfo>
+                            {TimelineContents[detailId].timelinePeriod}
+                        </ModalContentInfo>
+
                         <ModalContentTitle>활동 내용</ModalContentTitle>
                         <ModalContentInfo>
                             {TimelineContents[detailId].timelineInfo}

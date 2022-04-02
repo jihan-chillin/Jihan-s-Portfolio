@@ -2,12 +2,12 @@ export const theme = {
     color : {
         light  :  {
             'theme_1' : '#4B4B4B',
-            'theme_2' : '#7F7F7F',
+            'theme_2' : '#83898E',
             'theme_3' : '#9C9DA4',
             'theme_4' : '#4B4B4B',
             'theme_5' : '#E7E7E7',
             'theme_6' : '#F9F9F9',
-            'theme_7' : '#9C9DA4',
+            'theme_7' : '#E7E7E7',
             'theme_8' : '#F6C45A',
             'theme_9' : '#F6C45A',
             'theme_10' : '#F6C45A',
@@ -19,7 +19,7 @@ export const theme = {
         },
         dark : {
             'theme_1' : '#F2F2F2',
-            'theme_2' : '#F8F8F8',
+            'theme_2' : '#83898E',
             'theme_3' : '#A6A6A6',
             'theme_4' : '#F2F2F2',
             'theme_5' : '#15202B',
@@ -36,7 +36,7 @@ export const theme = {
         },  
         spring :  {
             'theme_1' : '#29453C',
-            'theme_2' : '#77877E',
+            'theme_2' : '#5B7C4F',
             'theme_3' : '#AAC97D',
             'theme_4' : '#4B4B4B',
             'theme_5' : '#ECEAE2',
@@ -53,7 +53,7 @@ export const theme = {
         },
         summer :  {
             'theme_1' : '#F27959',
-            'theme_2' : '#EF997B',
+            'theme_2' : '#B27765',
             'theme_3' : '#1F7181',
             'theme_4' : '#4B4B4B',
             'theme_5' : '#E8E2CB',
@@ -70,7 +70,7 @@ export const theme = {
         },
         autumn : {
             'theme_1' : '#7C3A2F',
-            'theme_2' : '#B08982',
+            'theme_2' : '#AC6F35',
             'theme_3' : '#F4BE3E',
             'theme_4' : '#4B4B4B',
             'theme_5' : '#DCC8AD',
@@ -87,12 +87,12 @@ export const theme = {
         }, 
         winter : {
             'theme_1' : '#B56865',
-            'theme_2' : '#D9B3B1',
+            'theme_2' : '#C5938C',
             'theme_3' : '#BA8785',
             'theme_4' : '#4B4B4B',
             'theme_5' : '#E8E0E0',
             'theme_6' : '#F9F9F9',
-            'theme_7' : '#BA8785',
+            'theme_7' : '#D6BEB4',
             'theme_8' : '#B56865',
             'theme_9' : '#BA8785',
             'theme_10' : '#D6BEB4',

@@ -86,13 +86,13 @@ export const TimelineTitle = styled.div`
     @media screen and (max-width : 800px){
         width: 200px;
         height : 40px;
-        line-height: 200%;
+        line-height: 250%;
         font-size: 14px;
 
         &:hover{
             width: 220px;
             height : 44px;
-            font-size: 16px;
+            font-size: 15px;
         }
     }
 

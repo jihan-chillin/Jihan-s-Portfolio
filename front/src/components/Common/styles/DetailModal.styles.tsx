@@ -9,14 +9,13 @@ export const ModalWrapper = styled.div`
     width : 440px;
     z-index : 1005;
     margin-left:200px;
-    background-color: ${(props)=>props.theme.theme_11};
+    background-color: #f2f2f2;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (max-width: 800px) {
         position: absolute;
         top : 50%;
-        /* left : ${(props:any)=>props.cate === 'ProjectDetail' ? '50' : '50'}%; */
         left : 50%;
         transform: translate(-50%, -50%);
         width: 280px;
@@ -62,7 +61,7 @@ export const ModalContentTitle = styled.span`
 export const ModalContentInfo = styled.div`
     margin-top: 8px;
     font-size: 14px;
-    color : ${(props)=>props.theme.theme_14};
+    color : ${(props)=>props.theme.theme_4};
     
     @media screen and (max-width: 800px) {
         font-size: 12px;

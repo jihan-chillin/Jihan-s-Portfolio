@@ -21,5 +21,8 @@ export const ContactMethod = styled.img`
 ` 
 
 export const Rights = styled.span`
+    display: block;
+    margin-top: 6px;
+    font-size: 15px;
     color: #f2f2f2;
 `

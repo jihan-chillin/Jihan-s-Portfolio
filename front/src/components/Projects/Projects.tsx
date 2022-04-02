@@ -14,6 +14,8 @@ import {
     ProjectTitle,
     ProjectInfo, 
     ProjectDetailButton,
+    PrivateTeam,
+    PrivateOrTeam,
 } from './Projects.styles'
 
 import {
@@ -63,6 +65,7 @@ export function Projects() {
                                         </SliderImgContainer>
                                         <SliderContent>
                                             <ProjectTitle>{value.ProjectTitle}</ProjectTitle>
+                                            <PrivateOrTeam>{value.PrivateOrTeam}</PrivateOrTeam>
                                             <ProjectInfo>{value.ProjectInfo}</ProjectInfo>
                                             <ProjectDetailButton src='./detail.png' onClick={()=>onShowModal(key)}/>
                                         </SliderContent>

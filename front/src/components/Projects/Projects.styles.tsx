@@ -32,9 +32,9 @@ export const CateName = styled.span`
         margin-top: 24px;
     }
 `
-
 export const SliderWholeContainer = styled.div`
     margin: 0 auto;
+    padding : 52px 0; 
     width: 98%;
 `
 
@@ -42,11 +42,11 @@ export const SliderWholeContainer = styled.div`
 export const StyledSlider = styled(Slider)`
     margin: 20px auto;
     padding: 10px 160px;
-    width: 800px;
+    width: 900px;
     border : 20px;
     align-items: center;
 
-    @media screen and (max-width : 800px){
+    @media screen and (max-width : 900px){
         margin: 0 auto;
         padding: 36px 80px;
         width: 76%;  
@@ -87,12 +87,13 @@ export const StyledSlider = styled(Slider)`
 
   .slick-next:before{
     color : ${(props)=>props.theme.theme_1};
+    
   }
 `
 
 export const SliderContainer = styled.div`
     display: inline-block;
-    width : 200px;
+    width : 00px;
     margin : 0px auto;
     padding : 10px 0;
     border-radius: 20px;
@@ -118,18 +119,25 @@ export const SliderContent = styled.div`
 export const ProjectTitle = styled.span`
     display: inline-block;
     margin-top: 30px;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 18px;
 
     @media screen and (max-width : 576px){
         font-size: 14px;
     }
 `
 
+export const PrivateOrTeam = styled.span`
+    display: block;
+    margin-top : 8px;
+    font-size: 14px;
+    color : #AAAAAA;
+`
+
 export const ProjectInfo = styled.div`
     width : 90%;
     margin: 20px auto;
-    font-size: 14px;
+    font-size: 18px;
     color : #5b5a5a;
 
     @media screen and (max-width : 576px){
@@ -137,14 +145,16 @@ export const ProjectInfo = styled.div`
     }
 
 `
-
 export const ProjectDetailButton = styled.img`
     float: right;
-    width: 20px;
+    width: 28px;
     margin-right: 12px;
+    margin-bottom: 10px;
     cursor: pointer; 
 
     @media screen and (max-width : 576px){
-        width : 16px;
+        width : 18px;
+        margin-right: 8px;
+        margin-bottom: 8px;
     }
 `

@@ -52,11 +52,11 @@
 ## 미리 보기 👁️‍🗨️
 |봄|여름|
 |:-:|:-:|
-|<img src="https://user-images.githubusercontent.com/69563429/160766066-c1af01f1-3c8b-4b71-bb17-bd33a302307e.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/160766173-6aa5b0a4-7d59-4fd8-9a76-8de073f88f1d.gif" width=80%/>|
+|<img src="https://user-images.githubusercontent.com/69563429/161430491-20ce231f-c2e5-4cf1-b9ee-71f0e3e43932.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/161430499-b01d6c3b-0486-47b3-90bf-78e008eff96c.gif" width=80%/>|
 
 |가을|겨울|
 |:-:|:-:|
-|<img src="https://user-images.githubusercontent.com/69563429/160766279-05c4cd31-df07-449d-8bec-6862fcc49b44.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/160766338-4947c3c3-bb9e-4a67-a248-0fd19eb7760a.gif" width=80%/>|
+|<img src="https://user-images.githubusercontent.com/69563429/161430506-f8500d49-239b-40f5-bbd1-849d598c879c.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/161430516-119bff71-751b-4044-a211-204b612a5d3b.gif" width=80%/>|
 
 -------------------------------------
 ## 세팅 및 실행 방법 🤷‍♀️

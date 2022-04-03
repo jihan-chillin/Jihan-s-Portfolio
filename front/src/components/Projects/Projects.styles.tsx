@@ -74,6 +74,11 @@ export const StyledSlider = styled(Slider)`
 
   .slick-prev:before{
     color : ${(props)=>props.theme.theme_1};
+    font-size: 30px;
+
+    @media screen and (max-width : 576px){
+        font-size: 24px;
+    }
   }
 
   .slick-next {
@@ -87,7 +92,11 @@ export const StyledSlider = styled(Slider)`
 
   .slick-next:before{
     color : ${(props)=>props.theme.theme_1};
-    
+    font-size: 30px;
+
+    @media screen and (max-width : 576px){
+        font-size: 24px;
+    }
   }
 `
 

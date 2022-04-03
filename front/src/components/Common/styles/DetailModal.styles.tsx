@@ -51,7 +51,7 @@ export const ModalContentTitle = styled.span`
     margin-top : 16px;
     font-size: 16px;
     font-weight: bold;
-    color : ${(props)=>props.theme.theme_1};
+    color : ${(props)=>props.theme.theme_3};
 
     @media screen and (max-width: 800px) {
         font-size: 14px;
@@ -61,7 +61,7 @@ export const ModalContentTitle = styled.span`
 export const ModalContentInfo = styled.div`
     margin-top: 8px;
     font-size: 14px;
-    color : ${(props)=>props.theme.theme_4};
+    color : #4b4b4b;
     
     @media screen and (max-width: 800px) {
         font-size: 12px;

@@ -66,7 +66,7 @@ export function DetailModal({
                         <ModalContentTitle>느낀점</ModalContentTitle>
                         <ModalContentInfo>{ProjectContent[detailId].takeAway}</ModalContentInfo>
                         {ProjectContent[detailId].gitAddress !==''
-                        ? <a href={ProjectContent[detailId].gitAddress}><ModalContentTitle>깃 레퍼지토리 ☜</ModalContentTitle></a>
+                        ? <a href={ProjectContent[detailId].gitAddress}><ModalContentTitle>깃 레퍼지토리 👈</ModalContentTitle></a>
                         : <></>
                         }
                         

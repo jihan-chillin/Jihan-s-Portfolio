@@ -4,7 +4,6 @@
 - [프로젝트 기능](#프로젝트-기능)
 - [프로젝트 구조](#프로젝트-구조)
 - [미리보기](#미리보기)
-- [실행 방법](#실행-방법)
 - [추후 업데이트 계획](#추후-업데이트-계획)
 -----
 ## 기술 스택 🛠️
@@ -59,21 +58,10 @@
 |<img src="https://user-images.githubusercontent.com/69563429/161430506-f8500d49-239b-40f5-bbd1-849d598c879c.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/161430516-119bff71-751b-4044-a211-204b612a5d3b.gif" width=80%/>|
 
 -------------------------------------
-## 세팅 및 실행 방법 🤷‍♀️
-##### 세팅 -->  /front
-<pre>
-  <code>yarn </code>
-</pre>
-
-##### 실행 -->  /front
-<pre>
-  <code>yarn dev</code>
-</pre>
-
----------------
-## 추후 업데이트 계획 💡
+## 업데이트 계획
 ##### :white_check_mark: GraphQL&MySQL로 컨텐츠 부분 DB화
 ##### :black_square_button: 서버연결 
 ##### :black_square_button: 카카오 로그인 시 사계절모드 활성화 / 로그인 안했을 경우 사계절모드 비활성화
 ##### :black_square_button: admin 계정 및 페이지 생성하여 컨텐츠 수정
+##### :black_square_button: 검색엔진 최적화
 ##### :black_square_button: 블로그 사이트 

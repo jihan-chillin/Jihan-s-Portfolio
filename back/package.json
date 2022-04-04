@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Jihan Kim",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ts-node src/index.ts"
+  },
   "dependencies": {
     "express": "^4.17.3"
   },

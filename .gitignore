@@ -136,4 +136,5 @@ node_modules
 .env
 .next
 
-#config 파일 
+# DB 정보 
+config.json

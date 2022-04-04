@@ -17,11 +17,18 @@
 - styled-components
 - react-slick
 ### Back(예정)
-- GraphQl
-- MySQL
-- ApolloServer
+#### Framework & Server
+- express
+- Apollo server
 
-### API (예정)
+#### DB
+- MySQL
+
+#### Library / API
+- sequelize
+- GraphQL
+
+### Etc
 - 카카오 로그인 API
 -----
 ## 프로젝트 기능 💻
@@ -32,20 +39,19 @@
 #### 2. 다크모드
 - 달 모양 아이콘을 클릭했을 시, 다크모드로 변환된다.
 - 로그인 없이 이용가능하다.
-#### 3. 회원가입 및 로그인
-- 카카오 로그인 API를 이용해 회원가입과 로그인을 할 수 있다.
+#### 3. 카카오 로그인
+- 카카오 로그인 API를 이용해 로그인을 할 수 있다. ( 로그인 시 사계절 모드 이용가능 )
 #### 4. 스크롤 위치기억
 - header에 있는 메뉴들을 클릭했을 시, 해당 화면으로 스크롤이 이동된다.
 #### 5. top버튼 
 - top버튼 클릭시 제일 위 화면으로 스크롤이 이동한다.
 #### 6. 기타
 - 모달창 (프로젝트 및 타임라인 상세보기)
-- Percentage Bar 채워지는 애니메이션
 -----
 ## 프로젝트 구조 🏗️
 ### Front
 <img src="https://user-images.githubusercontent.com/69563429/160769366-854f33cd-c222-4f27-a0d7-3b1b68040170.png" width=70%/>
-
+### Back
 -----
 
 ## 미리 보기 👁️‍🗨️
@@ -59,8 +65,9 @@
 
 -------------------------------------
 ## 업데이트 계획
-##### :white_check_mark: GraphQL&MySQL로 컨텐츠 부분 DB화
-##### :black_square_button: 서버연결 
+##### :white_check_mark: express 연결
+##### :black_square_button: sequelize로 MySQL연결
+##### :black_square_button: express - Apollo server 연결
 ##### :black_square_button: 카카오 로그인 시 사계절모드 활성화 / 로그인 안했을 경우 사계절모드 비활성화
 ##### :black_square_button: admin 계정 및 페이지 생성하여 컨텐츠 수정
 ##### :black_square_button: 검색엔진 최적화

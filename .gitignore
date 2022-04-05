@@ -138,3 +138,6 @@ node_modules
 
 # DB 정보 
 config.json
+
+# aws 키페어
+jihan-portfolio.pem

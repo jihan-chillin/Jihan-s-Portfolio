@@ -130,8 +130,6 @@ typings/
 # Serverless directories
 .serverless
 /front/build/
-react-nodebird.pem
-react-nodebird-aws.pem
 node_modules
 .env
 .next
@@ -141,3 +139,4 @@ config.json
 
 # aws 키페어
 jihan-portfolio.pem
+jihan-portfolio-aws.pem

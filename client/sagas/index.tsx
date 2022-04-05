@@ -5,9 +5,12 @@ import themeSaga from './themeSaga';
 import userSaga from './userSaga';
 import projectSaga from './projectSaga'
 import timelineSaga from './timelineSaga'
+import webUrl from '../config/config';
 
 
-axios.defaults.baseURL = 'http://localhost:3001';
+// 처음 실행되는 url 
+// 이거 나중에 production 모드일 때 혹은 local일 때 변경만 해주면 됨.
+axios.defaults.baseURL = webUrl;
 
 export default function* rootSaga() {
   yield all([

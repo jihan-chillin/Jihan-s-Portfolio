@@ -138,5 +138,4 @@ node_modules
 config.json
 
 # aws 키페어
-jihan-portfolio.pem
-jihan-portfolio-aws.pem
+jihan-first-portfolio.pem

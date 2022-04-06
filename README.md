@@ -35,11 +35,11 @@
 #### 0. 반응형 웹 
 #### 1. 사계절 모드
 - 봄, 여름, 가을, 겨울 별로 사이트의 테마색상이 변경된다.
-- 카카오 로그인을 했을 경우에만 변경 가능하다.
+- 카카오 로그인을 했을 경우에만 변경 가능하다.(예정)
 #### 2. 다크모드
 - 달 모양 아이콘을 클릭했을 시, 다크모드로 변환된다.
 - 로그인 없이 이용가능하다.
-#### 3. 카카오 로그인
+#### 3. 카카오 로그인(예정)
 - 카카오 로그인 API를 이용해 로그인을 할 수 있다. ( 로그인 시 사계절 모드 이용가능 )
 #### 4. 스크롤 위치기억
 - header에 있는 메뉴들을 클릭했을 시, 해당 화면으로 스크롤이 이동된다.
@@ -51,7 +51,7 @@
 ## 프로젝트 구조 🏗️
 ### Front
 <img src="https://user-images.githubusercontent.com/69563429/160769366-854f33cd-c222-4f27-a0d7-3b1b68040170.png" width=70%/>
-### Back
+
 -----
 
 ## 미리 보기 👁️‍🗨️
@@ -65,9 +65,10 @@
 
 -------------------------------------
 ## 업데이트
-##### :white_check_mark: express 연결
-##### :white_check_mark: sequelize로 MySQL연결
+##### :black_square_button: 모바일 화면 깨지는 거 
+##### :black_square_button: express 연결
+##### :black_square_button:: sequelize로 MySQL연결
 ##### :black_square_button: express - Apollo server 연결
-##### :black_square_button: 카카오 로그인 시 사계절모드 활성화 / 로그인 안했을 경우 사계절모드 비활성화
+##### :black_square_button: 카카오 로그인 시 사계절모드 활성화 / 비로그인 시 계절모드 비활성화
 ##### :black_square_button: admin 계정 및 페이지 생성하여 컨텐츠 수정
 ##### :black_square_button: 검색엔진 최적화

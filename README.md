@@ -1,6 +1,6 @@
 # 김지한 포트폴리오 💚
-###### [ 디자인  - figma ](https://www.figma.com/file/Mj3eFW02zJYPjW5nnQXxBi/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=320%3A1214)
-###### [ 배포 사이트 ](http://kozubjihan-portfolio.com/)
+### [ 디자인  - figma 👈 ](https://www.figma.com/file/Mj3eFW02zJYPjW5nnQXxBi/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=320%3A1214)
+### [ 배포 사이트 👈](http://kozubjihan-portfolio.com/)
 ## 목차
 - [기술 스택](#기술-스택)
 - [프로젝트 기능](#프로젝트-기능)

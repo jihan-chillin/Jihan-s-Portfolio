@@ -66,6 +66,7 @@
 
 -------------------------------------
 ## 업데이트
+##### :black_square_button: 로드시 스타일 깨지는 거 
 ##### :black_square_button: 모바일 화면 깨지는 거 
 ##### :black_square_button: express 연결
 ##### :black_square_button:: sequelize로 MySQL연결

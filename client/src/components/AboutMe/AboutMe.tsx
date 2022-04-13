@@ -1,35 +1,80 @@
 import React from 'react'
 import { 
-    AboutContent,
     AboutContentWrapper,
     AboutWrapper, 
     CateName, 
+    InfoContent, 
+    InfoContentWrapper, 
+    InfoIcon, 
+    InfoTitle, 
+    InfoWrapper, 
+    LineWrapper, 
     Profile,
     ProfileContainer,
-    Moto,
-    MotoEmph,
-    Introduction
+    WholeInfoWrapper,
 } from './AboutMe.styles'
 
 import { useSelector } from 'react-redux'
 
-export function AboutMe () {
+export function AboutMe() {
     const {
         profile,
+        FirstLine,
+        SecondLine,
+        ThirdLine
     } = useSelector((state:any)=>state.about);
+
+    const {color} = useSelector((state:any)=>state.theme)
+    const dark = color.theme_1 == '#F2F2F2'
 
     return(
        <AboutWrapper id ="about">
-            <CateName>About Me</CateName>
+            <CateName>About</CateName>
             <AboutContentWrapper>
                 <ProfileContainer>
                     <Profile src={profile}/>
-                </ProfileContainer>
-                <AboutContent>
-                    <Moto>꾸준한 성장을 목표로 하는</Moto>
-                    <Moto>프론트엔드 개발자 <MotoEmph>김지한</MotoEmph>입니다.</Moto>
-                    <Introduction>Typescript와 React를 메인으로 프론트엔드 개발에 관심을 가지고 있는 주니어 프론트엔드 개발자입니다. 꾸준히 성장하는 개발자가 되기 위해, 팀 프로젝트 이외에 개인 프로젝트를 통하여 이론과 실무감각을 함께 쌓으려 노력하고 있습니다.</Introduction>
-                </AboutContent>
+                </ProfileContainer>   
+
+                <WholeInfoWrapper>
+                    <LineWrapper>
+                        {FirstLine.map((value)=>(
+                            <InfoWrapper>
+                                <InfoIcon dark={dark} src={value.icon}/>
+                                <InfoContentWrapper>
+                                    <InfoTitle>{value.title}</InfoTitle>
+                                    <InfoContent>{value.firstcontent}</InfoContent>
+                                </InfoContentWrapper>
+                            </InfoWrapper>
+                        ))}
+                    </LineWrapper>
+
+                    <LineWrapper>
+                        {SecondLine.map((value)=>(
+                            <InfoWrapper>
+                                <InfoIcon dark={dark} src={value.icon}/>
+                                <InfoContentWrapper>
+                                    <InfoTitle>{value.title}</InfoTitle>
+                                    <InfoContent>{value.firstcontent}</InfoContent>
+                                </InfoContentWrapper>
+                            </InfoWrapper>
+                        ))}
+                    </LineWrapper>
+
+                    <LineWrapper>
+                        {ThirdLine.map((value)=>(
+                            <InfoWrapper>
+                                <InfoIcon dark={dark} src={value.icon}/>
+                                <InfoContentWrapper>
+                                    <InfoTitle>{value.title}</InfoTitle>
+                                    <InfoContent>{value.firstcontent}</InfoContent>
+                                    {value.secondcontent != '' ? <InfoContent>{value.secondcontent}</InfoContent> : <></>}
+                                </InfoContentWrapper>
+                            </InfoWrapper>
+                        ))}
+                    </LineWrapper>
+                
+                </WholeInfoWrapper>    
+              
             </AboutContentWrapper>
        </AboutWrapper>
     )

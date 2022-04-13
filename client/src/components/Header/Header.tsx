@@ -18,10 +18,10 @@ export function Header (){
         <HeaderWrapper>
            <a href="/"><LogoImage dark={dark}src="/logo.png"/></a>
                 <MenuWrapper>
-                    <MenuItem to="about" spy={true} smooth={true}>About Me</MenuItem>
+                    <MenuItem to="about" spy={true} smooth={true}>About</MenuItem>
                     <MenuItem to="skill" spy={true} smooth={true}>Skills</MenuItem>
                     <MenuItem to="project" spy={true} smooth={true}>Projects</MenuItem>
-                    <MenuItem to="eduaward" spy={true} smooth={true}>Edu/Award</MenuItem>
+                    <MenuItem to="eduawards" spy={true} smooth={true}>Edu/Awards</MenuItem>
                     <MenuItem to="contact" spy={true} smooth={true}>Contact</MenuItem>
                     <Sidebar/>
                </MenuWrapper> 

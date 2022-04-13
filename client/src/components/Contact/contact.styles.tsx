@@ -15,8 +15,8 @@ export const ContactMethodWrapper = styled.div`
 `
 
 export const ContactMethod = styled.img`
-    width: 50px;
-    margin : 0 16px;
+    width: 40px;
+    margin : 8px 16px;
     filter : invert(100%);
 ` 
 

@@ -5,19 +5,36 @@ export const initialState = {
     moto : '꾸준한 성장을 목표로 하는 FE개발자',
     profile : "./profile.png",
     profilePath : [], // 프로필 업로드 시 저장되는 경로
-    InfoAboutMe : [{
-        icon : "./mail.png",
-        infoText : "kimjihan77@naver.com",
-        goLink : ""
+    FirstLine : [{
+        icon : './name.png',
+        title : '이름',
+        firstcontent : '김지한',
     },{
-        icon : "./github.png",
-        infoText : "https://github.com/jihan-chillin",
-        goLink : "https://github.com/jihan-chillin"
+        icon : './call.png',
+        title : '연락처',
+        firstcontent : '010-2759-3959',
+    }],
+    SecondLine : [{
+        icon : './calendar.png',
+        title : '생년월일',
+        firstcontent : '1996.07.07',
     },{
-        icon : "./blog.png",
-        infoText : "CODE N CHILL (BLOG)",
-        goLink : "https://blog.naver.com/kimjihan77"
-    }]
+        icon : './mail.png',
+        title : '이메일',
+        firstcontent : 'kimjihan77@naver.com',
+    }],
+    ThirdLine : [{
+        icon : './place.png',
+        title : '주소지',
+        firstcontent : '서울시 서대문구',
+        secondcontent : '',
+    },{
+        icon : './uni.png',
+        title : '학력',
+        firstcontent : '성신여자대학교',
+        secondcontent : '청정융합과학과/통계학과'
+    }],
+    
 }
 
 const reducer = (state = initialState, action) => produce(state, (draft) => {

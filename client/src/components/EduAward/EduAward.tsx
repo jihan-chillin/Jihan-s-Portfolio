@@ -37,7 +37,7 @@ export function EduAwards() {
     
     return (
         <>
-            <TimelineWrapper id="Edu/Awards">
+            <TimelineWrapper id="eduawards">
                 <TimelineBackground showTimelineDetail={showTimelineDetail}/>
                 <CateName>Edu/Awards</CateName>
                 {showTimelineDetail ? <DetailModal detailId={timelineKey}/> : <></>}

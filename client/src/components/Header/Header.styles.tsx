@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     padding : 0 40px;
     height: 88px;
-    background-color: ${(props)=>props.theme.theme_14};
+    background-color: ${(props)=>props.theme.theme_13};
 `
 
 export const LogoImage = styled.img<{dark:any}>`
@@ -23,7 +23,7 @@ export const MenuItem = styled(Link)`
     vertical-align: middle;
     margin-right: 40px;
     font-size: 16px;
-    color : ${(props)=>props.theme.theme_4};
+    color : ${(props)=>props.theme.theme_6};
     cursor: pointer;
 
     &:hover{

@@ -17,7 +17,7 @@ export const SidebarNav = styled.div<{showSidebar : boolean}>`
     height: 100vh;
     z-index: 1001;
     border-left : 1px solid ${(props)=>props.theme.theme_4};
-    background-color: ${(props)=>props.theme.theme_14};
+    background-color: ${(props)=>props.theme.theme_13};
     overflow: scroll ;
 `
 export const CloseButtonWrapper = styled.div`
@@ -37,7 +37,7 @@ export const SidebarContentWrapper = styled.div`
     text-align: center;
     padding : 18px 0;
     max-height: 260px;
-    border-bottom: 3px solid ${(props)=>props.theme.theme_15};
+    border-bottom: 2px solid ${(props)=>props.theme.theme_6};
 `
 export const InfoText = styled.span`
     display: block;
@@ -52,7 +52,7 @@ export const SidebarMenuWrapper = styled.div`
         display: block;
         text-align: center;
         padding : 18px 0;
-        border-bottom: 3px solid ${(props)=>props.theme.theme_15};
+        border-bottom: 2px solid ${(props)=>props.theme.theme_6};
     }
 `
 

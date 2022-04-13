@@ -18,7 +18,8 @@ export const ProjectBackground = styled.div<{showProjectDetail:any}>`
 export const ProjectsWrapper = styled.div`
     position: relative;
     margin: 0 auto;
-    background-color: ${(props)=>props.theme.theme_7};
+    padding-bottom : 70px;
+    background-color: ${(props)=>props.theme.theme_9};
 `
 
 export const CateName = styled.span`
@@ -29,85 +30,58 @@ export const CateName = styled.span`
     opacity: 0.5;
 
     @media screen and (max-width : 800px){
-        margin-top: 24px;
+        margin-top: 60px;
     }
 `
-export const SliderWholeContainer = styled.div`
-    margin: 0 auto;
-    padding : 52px 0; 
-    width: 98%;
+
+export const ProjectContentWrapper = styled.div`
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    padding : 52px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+    @media screen and (max-width : 1200px){
+        width : 80%;
+        padding : 40px;
+    }
 `
 
-// react-slick 커스텀 
-export const StyledSlider = styled(Slider)`
-    margin: 20px auto;
-    padding: 10px 160px;
+export const ProjectTitle = styled.div`
+    font-size: 20px;
+    font-weight: bold;
+`
+
+export const Personnel = styled.div`
+    margin-top: 8px;
+    font-size: 16px;
+    color : #AAAAAA;
+`
+
+export const ProjectDetailWrapper = styled.div`
     width: 900px;
-    border : 20px;
-    align-items: center;
+    margin: 48px auto;
+    display: flex;
+    justify-content: space-between;
 
-    @media screen and (max-width : 900px){
-        margin: 0 auto;
-        padding: 36px 80px;
-        width: 76%;  
-        border : 20px;
-        align-items: center;
+    @media screen and (max-width : 1200px){
+        display: block;
+        width : 80%;
+        margin: 16px auto;
     }
-
-    @media screen and (max-width : 576px){
-        margin: 0 auto;
-        padding: 36px 50px;
-        width: 76%;  
-        border : 20px;
-        align-items: center;
-    }
-
-    .slick-prev {
-    left: 50px !important;
-    bottom : 50%;
-    z-index: 1000;
-
-    @media screen and (max-width : 800px){
-        left: 20px !important;
-     }
-    }
-
-  .slick-prev:before{
-    color : ${(props)=>props.theme.theme_1};
-    font-size: 30px;
-
-    @media screen and (max-width : 576px){
-        font-size: 24px;
-    }
-  }
-
-  .slick-next {
-    right: 50px !important;
-    z-index: 1000;
-
-    @media screen and (max-width : 800px){
-        right: 20px !important;
-    }
-  }
-
-  .slick-next:before{
-    color : ${(props)=>props.theme.theme_1};
-    font-size: 30px;
-
-    @media screen and (max-width : 576px){
-        font-size: 24px;
-    }
-  }
 `
 
-export const SliderContainer = styled.div`
+export const StyledSlider = styled(Slider)`
+    width : 340px;
     display: inline-block;
-    width : 00px;
-    margin : 0px auto;
-    padding : 10px 0;
+    padding : 40px 0;
     border-radius: 20px;
     background-color: #F2F2F2;
     overflow : visible !important;
+
+    @media screen and (max-width : 1200px){
+        margin : 0 auto;
+    }
 `
 
 export const SliderImgContainer = styled.div`
@@ -116,54 +90,62 @@ export const SliderImgContainer = styled.div`
 `
 
 export const SliderImg = styled.img`
-    display: inline-block;
-    margin: 0 auto;
-    width: 98%;
+    width: 100%;
+    object-fit: contain;
 `
-export const SliderContent = styled.div`
-    width : 80%;
-    margin: 0 auto;
-    padding : 10px 0 ;
-`
-export const ProjectTitle = styled.span`
-    display: inline-block;
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: bold;
 
-    @media screen and (max-width : 576px){
-        font-size: 14px;
+export const ProjectInfoWrapper = styled.div`
+    width : 500px;
+    height : 436px;
+    padding : 20px 0;
+    text-align: left;
+
+    @media screen and (max-width : 1200px){
+        margin : 8px auto;
+        padding : 40px 0;
+        width: auto;
+        height: auto;
     }
 `
 
-export const PrivateOrTeam = styled.span`
-    display: block;
-    margin-top : 8px;
-    font-size: 14px;
-    color : #AAAAAA;
+export const ProjectSummary = styled.div`
+    margin-bottom: 32px;
+    font-size: 20px;
+    color : #4b4b4b;
+
+    @media screen and (max-width : 800px){
+        width: 80%;
+        margin: 32px 0;
+        font-size: 16px;
+        word-break:keep-all;
+    }
 `
 
-export const ProjectInfo = styled.div`
-    width : 90%;
-    margin: 20px auto;
+export const SummaryEmph = styled.span`
+    font-weight: bold;
+    color : ${(props)=>props.theme.theme_7};
+`
+export const InfoTitle = styled.div`
     font-size: 18px;
-    color : #5b5a5a;
+    color : #000000;
 
-    @media screen and (max-width : 576px){
+    @media screen and (max-width : 800px){
+        font-size: 16px;
+    }
+`
+
+export const Infos = styled.div`
+    margin-bottom: 20px;
+    font-size: 15px;
+    color : #4b4b4b;
+
+    @media screen and (max-width : 800px){
         font-size: 12px;
     }
-
 `
-export const ProjectDetailButton = styled.img`
-    float: right;
-    width: 28px;
-    margin-right: 12px;
-    margin-bottom: 10px;
-    cursor: pointer; 
 
-    @media screen and (max-width : 576px){
-        width : 18px;
-        margin-right: 8px;
-        margin-bottom: 8px;
-    }
+export const GitLink = styled.div`
+    font-size: 18px;
+    text-decoration: underline;
+    color : #A9A9A9;
 `

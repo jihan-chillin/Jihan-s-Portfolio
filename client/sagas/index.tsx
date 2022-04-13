@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import themeSaga from './themeSaga';
 import userSaga from './userSaga';
-import projectSaga from './projectSaga'
 import timelineSaga from './EduAwardSaga'
 import webUrl from '../config/config';
 
@@ -16,7 +15,6 @@ export default function* rootSaga() {
   yield all([
     fork(themeSaga),
     fork(userSaga),
-    fork(projectSaga),
     fork(timelineSaga),
   ]);
 }

@@ -77,7 +77,7 @@ export function Sidebar() {
                         <SidebarMenuItem to="about" spy={true} smooth={true}>About Me</SidebarMenuItem>
                         <SidebarMenuItem to="skill" spy={true} smooth={true}>Skills</SidebarMenuItem>
                         <SidebarMenuItem to="project" spy={true} smooth={true}>Projects</SidebarMenuItem>
-                        <SidebarMenuItem to="timeline" spy={true} smooth={true}>Timeline</SidebarMenuItem>
+                        <SidebarMenuItem to="eduaward" spy={true} smooth={true}>Edu/Award</SidebarMenuItem>
                         <SidebarMenuItem to="contact" spy={true} smooth={true}>Contact</SidebarMenuItem>
                 </SidebarMenuWrapper>
                 

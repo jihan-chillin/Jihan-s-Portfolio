@@ -10,18 +10,23 @@ import {
     TimelineTitle,
     Period,
     Moredetail,
-} from './EduAwards.styles'
+} from './EduAward.styles'
 
-import { TOGGLE_TIMELINE_DETAIL_REQUEST } from '../../../reducers/timelineReducer';
+import { TOGGLE_EDUAWARDS_DETAIL_REQUEST } from '../../../reducers/EduAwardReducer';
 
 export function EduAwards() {
-    const {TimelineContents, showTimelineDetail, timelineKey, modal} = useSelector((state:any)=> state.timeline);
+
+    const {
+        EduawardContents, 
+        showTimelineDetail, 
+        timelineKey
+    } = useSelector((state:any)=> state.eduaward);
 
     const dispatch = useDispatch();
     
     const showTimelineModal = useCallback((key)=>{
         dispatch({
-            type : TOGGLE_TIMELINE_DETAIL_REQUEST,
+            type : TOGGLE_EDUAWARDS_DETAIL_REQUEST,
             data : {
                 showTimelineDetail : true,
                 timelineKey : key
@@ -38,10 +43,10 @@ export function EduAwards() {
                 {showTimelineDetail ? <DetailModal detailId={timelineKey}/> : <></>}
                
                     <TimelineContentWrapper>
-                    {TimelineContents.map((value, index)=>(
+                    {EduawardContents.map((value, index)=>(
                             <TimelineDetailWrapper colorKey={index}>
-                                <TimelineTitle>{value.timelineTitle}</TimelineTitle>
-                                <Period>{value.timelinePeriod}</Period>
+                                <TimelineTitle>{value.eduwardTitle}</TimelineTitle>
+                                <Period>{value.eduawardPeriod}</Period>
                                 <Moredetail onClick={()=>showTimelineModal(index)}>더 자세히보기👈</Moredetail>
                             </TimelineDetailWrapper>
                     ))}

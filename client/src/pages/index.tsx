@@ -7,7 +7,7 @@ import { AboutMe } from "../components/AboutMe/AboutMe";
 import { TopBtn } from "../components/Common/views/TopBtn";
 import { Skills } from "../components/Skills/Skills";
 import { Projects } from "../components/Projects/Projects";
-import { Timeline } from "../components/Timeline/Timeline";
+import { EduAwards } from "../components/EduAward/EduAward";
 import { Contact } from "../components/Contact/contact";
 
 function MainPage(){
@@ -26,7 +26,7 @@ function MainPage(){
                 <AboutMe/>
                 <Skills/>
                 <Projects/>
-                <Timeline/>
+                <EduAwards/>
                 <Contact/>
             </MainContainer>
         </>

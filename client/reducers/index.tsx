@@ -6,7 +6,7 @@ import user from './userReducer'
 import about from './aboutReducer'
 import skill from './skillsReducer'
 import project from './projectsReducer'
-import timeline from './timelineReducer'
+import eduaward from './EduAwardReducer'
 
 const rootReducer = combineReducers({
   index: (state ={}, action) => {
@@ -24,7 +24,7 @@ const rootReducer = combineReducers({
   about,
   skill,
   project,
-  timeline,
+  eduaward,
 });
 
 export default rootReducer;

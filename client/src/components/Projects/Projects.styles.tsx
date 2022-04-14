@@ -127,6 +127,7 @@ export const SummaryEmph = styled.span`
 `
 export const InfoTitle = styled.div`
     font-size: 18px;
+    font-weight: bold;
     color : #000000;
 
     @media screen and (max-width : 800px){

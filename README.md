@@ -58,11 +58,11 @@
 ## 미리 보기 👁️‍🗨️
 |봄|여름|
 |:-:|:-:|
-|<img src="https://user-images.githubusercontent.com/69563429/161430491-20ce231f-c2e5-4cf1-b9ee-71f0e3e43932.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/161430499-b01d6c3b-0486-47b3-90bf-78e008eff96c.gif" width=80%/>|
+|<img src="https://user-images.githubusercontent.com/69563429/161430491-20ce231f-c2e5-4cf1-b9ee-71f0e3e43932.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/163105339-3e075c2b-4a5e-49d5-8c9b-f2211c14be02.gif" width=80%/>|
 
 |가을|겨울|
 |:-:|:-:|
-|<img src="https://user-images.githubusercontent.com/69563429/161430506-f8500d49-239b-40f5-bbd1-849d598c879c.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/161430516-119bff71-751b-4044-a211-204b612a5d3b.gif" width=80%/>|
+|<img src="https://user-images.githubusercontent.com/69563429/163105158-53e6d4eb-2fc5-44e7-9af0-d6113cc5bbbf.gif" width=80%/>|<img src="https://user-images.githubusercontent.com/69563429/163105257-9a7c4dca-7e19-43e5-986b-570264b8ef48.gif" width=80%/>|
 
 -------------------------------------
 ## 업데이트

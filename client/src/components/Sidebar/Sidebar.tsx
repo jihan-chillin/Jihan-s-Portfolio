@@ -1,6 +1,5 @@
 import React, {useCallback, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { RoundButton } from '../Common/views/RoundBtn';
 
 import { 
     More,
@@ -53,25 +52,13 @@ export function Sidebar() {
                 <CloseButtonWrapper>
                     <CloseButton src="./closebtn.png" dark={dark} onClick={ToggleSidebar}/>
                 </CloseButtonWrapper>
-                {!me 
-                    ? (
-                        <SidebarContentWrapper>
-                            <InfoText><span style={{fontWeight : 'bold', color : color.theme_1}}>OOO</span> 님</InfoText>
-                            <InfoText><span style={{fontWeight : 'bold'}}>사계절 모드</span>를</InfoText>
-                            <InfoText>경험해보세요!</InfoText>
-                            {/* <RoundButton/> */}
-                        </SidebarContentWrapper>
-                    )
-                    
-                    : (
-                        <SidebarContentWrapper>
-                        <InfoText>로그인 하여</InfoText>
-                        <InfoText><span style={{fontWeight : 'bold'}}>사계절 모드</span>를</InfoText>
-                        <InfoText>경험해보세요!</InfoText>
-                        <RoundButton/>
-                        </SidebarContentWrapper>
-                        
-                    )}
+
+                <SidebarContentWrapper>
+                    <InfoText><span style={{fontWeight : 'bold', color : color.theme_1}}>OOO</span> 님</InfoText>
+                    <InfoText><span style={{fontWeight : 'bold'}}>사계절 모드</span>를</InfoText>
+                    <InfoText>경험해보세요!</InfoText>
+                </SidebarContentWrapper>
+
                 <SidebarMenuWrapper>
                     <SidebarMenuTitle>menu</SidebarMenuTitle>
                         <SidebarMenuItem to="about" spy={true} smooth={true}>About Me</SidebarMenuItem>
@@ -87,22 +74,15 @@ export function Sidebar() {
                         <SidebarModeImg dark={dark} onClick={()=>remoteTheme('light')} src="/light.png"/> 
                         <SidebarModeImg dark={dark} onClick={()=>remoteTheme('dark')} src="/dark.png"/> 
                     </SidebarModeItemWrapper> 
-                    {!me 
-                        ? (
-                            <>
-                                <SidebarModeItemWrapper>
-                                    <SidebarModeText onClick={()=>remoteTheme('spring')}>봄</SidebarModeText>
-                                    <SidebarModeText onClick={()=>remoteTheme('summer')}>여름</SidebarModeText>
-                                </SidebarModeItemWrapper>
-                                <SidebarModeItemWrapper>
-                                    <SidebarModeText onClick={()=>remoteTheme('autumn')}>가을</SidebarModeText>
-                                    <SidebarModeText onClick={()=>remoteTheme('winter')}>겨울</SidebarModeText>
-                                </SidebarModeItemWrapper>
-                            </>
-                        ) : (
-                            <></>
-                        )
-                    }
+                    <SidebarModeItemWrapper>
+                        <SidebarModeText onClick={()=>remoteTheme('spring')}>봄</SidebarModeText>
+                        <SidebarModeText onClick={()=>remoteTheme('summer')}>여름</SidebarModeText>
+                    </SidebarModeItemWrapper>
+                    <SidebarModeItemWrapper>
+                        <SidebarModeText onClick={()=>remoteTheme('autumn')}>가을</SidebarModeText>
+                        <SidebarModeText onClick={()=>remoteTheme('winter')}>겨울</SidebarModeText>
+                    </SidebarModeItemWrapper>
+
                 </SidebarContentWrapper>
             </SidebarNav>
         </>

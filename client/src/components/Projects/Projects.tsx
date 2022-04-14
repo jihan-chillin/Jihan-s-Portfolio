@@ -151,7 +151,6 @@ export function Projects() {
                         </ProjectInfoWrapper>
                     </ProjectDetailWrapper>
                 </ProjectContentWrapper>
-
             </ProjectsWrapper>
         </>
     )

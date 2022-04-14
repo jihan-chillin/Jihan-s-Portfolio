@@ -17,13 +17,11 @@ export interface IDetailModal{
 }
 
 export function DetailModal({
-    cate,
     detailId
 }:IDetailModal){
     const {color} = useSelector((state:any)=>state.theme)
     const dark:boolean = color.theme_1 == '#F2F2F2' 
-
-    const {ProjectContent} = useSelector((state:any)=>state.project)
+    
     const {EduawardContents} = useSelector((state:any)=>state.eduaward)
     const dispatch = useDispatch();
 

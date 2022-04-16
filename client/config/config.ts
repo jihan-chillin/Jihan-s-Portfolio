@@ -1,4 +1,4 @@
-const webUrl = 'http://kozubjihan-portfolio.com/';
+const webUrl = 'http://3.37.130.189';
 
 
 export default webUrl;

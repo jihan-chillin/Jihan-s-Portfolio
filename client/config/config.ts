@@ -1,4 +1,4 @@
-const webUrl = 'http://3.37.130.189';
+const webUrl = 'http://54.180.8.217';
 
 
 export default webUrl;

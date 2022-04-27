@@ -69,8 +69,7 @@
 ##### :black_square_button: 로드시 스타일 깨지는 거 
 ##### :black_square_button: 모바일 화면 깨지는 거 
 ##### :black_square_button: express 연결
-##### :black_square_button:: sequelize로 MySQL연결
+##### :black_square_button: sequelize로 MySQL연결
 ##### :black_square_button: express - Apollo server 연결
 ##### :black_square_button: 카카오 로그인 시 사계절모드 활성화 / 비로그인 시 계절모드 비활성화
 ##### :black_square_button: admin 계정 및 페이지 생성하여 컨텐츠 수정
-##### :black_square_button: 검색엔진 최적화

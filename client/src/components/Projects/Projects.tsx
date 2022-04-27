@@ -57,7 +57,7 @@ export function Projects() {
                             </ProjectSummary>                            
                             <InfoTitle>작업기간</InfoTitle>
                             <Infos>{ProjectContent[0].period}</Infos>
-                            <InfoTitle>주요기능</InfoTitle>
+                            <InfoTitle>기여도 (맡은 역할)</InfoTitle>
                             <Infos>{ProjectContent[0].contribution}</Infos>
                             <InfoTitle>기술스택</InfoTitle>
                             <Infos>{ProjectContent[0].techStack}</Infos>
@@ -86,7 +86,7 @@ export function Projects() {
                             </ProjectSummary>                            
                             <InfoTitle>작업기간</InfoTitle>
                             <Infos>{ProjectContent[1].period}</Infos>
-                            <InfoTitle>주요기능</InfoTitle>
+                            <InfoTitle>기여도 (맡은 역할)</InfoTitle>
                             <Infos>{ProjectContent[1].contribution}</Infos>
                             <InfoTitle>기술스택</InfoTitle>
                             <Infos>{ProjectContent[1].techStack}</Infos>
@@ -116,7 +116,7 @@ export function Projects() {
                             </ProjectSummary>                            
                             <InfoTitle>작업기간</InfoTitle>
                             <Infos>{ProjectContent[2].period}</Infos>
-                            <InfoTitle>주요기능</InfoTitle>
+                            <InfoTitle>기여도 (맡은 역할)</InfoTitle>
                             <Infos>{ProjectContent[2].contribution}</Infos>
                             <InfoTitle>기술스택</InfoTitle>
                             <Infos>{ProjectContent[2].techStack}</Infos>
@@ -143,7 +143,7 @@ export function Projects() {
                             </ProjectSummary>                            
                             <InfoTitle>작업기간</InfoTitle>
                             <Infos>{ProjectContent[3].period}</Infos>
-                            <InfoTitle>주요기능</InfoTitle>
+                            <InfoTitle>기여도 (맡은 역할)</InfoTitle>
                             <Infos>{ProjectContent[3].contribution}</Infos>
                             <InfoTitle>기술스택</InfoTitle>
                             <Infos>{ProjectContent[3].techStack}</Infos>

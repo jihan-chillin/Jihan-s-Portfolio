@@ -35,8 +35,8 @@ export const initialState = {
         projectTitle : "품(POOM)",
         privateOrTeam : '팀 프로젝트(인원 6명)',
         period : "2021.07.03 ~ 2021.08.11",
-        techStack : "Figma, React(Next.js), typescript, Redux, GraphQL, MySQL, ApolloServer",
-        contribution : "HTML, CSS, jQuery, Thymeleaf, Java, SpringBoot, Oracle",
+        techStack : "HTML, CSS, jQuery, Thymeleaf, Java, SpringBoot, Oracle",
+        contribution : "마이페이지(내가 쓴 글, 댓글, 찜한 글), 게시판 CKEDITOR(CRUD)",
         gitAddress : 'https://github.com/jihan-chillin/poom'
     },{
         projectId : 3,
